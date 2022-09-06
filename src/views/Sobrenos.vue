@@ -13,7 +13,9 @@
                 <img src="@/assets/Logo_vertical_branco.png" alt="">
             </div>
     </section>
-    <hr class="linha-sobrenos" color="#B04141"/>
+    <div class="linha-sobrenos">
+    <hr color="#B04141"/>
+    </div>
     <section class="contato-section">
             <div class="element top-box-a-contato">
             </div>
@@ -23,7 +25,32 @@
 
             <div class="top-box-c-contato">
             </div>
+    </section>
 
+    <section class="contato-section-2">
+            <div class="element top-box-a-contato-2">
+                <ul>
+                    <li><a href="https://github.com/alisogs"><p>AlisoGS</p></a></li>
+                    <li><a href="https://github.com/caio-mitz"><p>caio-mitz</p></a></li>
+                    <li><a href=""><p>maria-nichelle</p></a></li>
+                </ul>
+            </div>
+
+            <div class="element top-box-b-contato-2">
+                <ul>
+                    <li><a href="https://www.instagram.com/aliso_gab/"><p>@aliso_gab</p></a></li>
+                    <li><a href="https://www.instagram.com/caio_mitz/"><p>@caio_mitz</p></a></li>
+                    <li><a href=""><p>@maria-nichelle</p></a></li>
+                </ul>
+            </div>
+
+            <div class="top-box-c-contato-2">
+                <ul>
+                    <li><a href="https://twitter.com/alissogabsantos"><p>@alissogabsantos</p></a></li>
+                    <li><a href="https://twitter.com/caiodepaz"><p>@caiodepaz</p></a></li>
+                    <li><a href=""><p>@maria-nichelle</p></a></li>
+                </ul>
+            </div>
     </section>
     </div>
 </template>
@@ -76,9 +103,89 @@ export default {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
     'top-box-a-contato top-box-b-contato top-box-c-contato';
-    height: 50rem;
+    height: 32rem;
     margin-top: 0;
 }
+.contato-section-2 {
+    display: grid;
+    margin-left: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    'top-box-a-contato-2 top-box-b-contato-2 top-box-c-contato-2';
+    height: 15rem;
+    margin-top: 0;
+}
+
+.top-box-a-contato-2 {
+    width: 500px;
+    height: 300px;
+    grid-area: top-box-a-contato-2;
+    display: flex;
+    justify-content: center;
+}
+
+.top-box-b-contato-2 {
+    width: 500px;
+    height: 300px;
+    grid-area: top-box-a-contato-2;
+    display: flex;
+    justify-content: center;
+}
+
+.top-box-c-contato-2 {
+    width: 500px;
+    height: 300px;
+    grid-area: top-box-a-contato-2;
+    display: flex;
+    justify-content: center;
+    margin-top: -2.9rem;
+}
+
+.top-box-a-contato-2 ul{
+    list-style: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+.top-box-b-contato-2 ul{
+    list-style: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+.top-box-c-contato-2 ul{
+    list-style: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+.top-box-a-contato-2 a{
+    list-style: none;
+    color: #ffffff;
+}
+.top-box-b-contato-2 a{
+    list-style: none;
+    color: #ffffff;
+}
+
+.top-box-c-contato-2 a{
+    list-style: none;
+    color: #ffffff;
+}
+
+.top-box-b-contato-2 {
+    grid-area: top-box-b-contato-2;
+    width: 500px;
+    height: 300px;
+}
+
+.top-box-c-contato-2 {
+    grid-area: top-box-c-contato-2;
+    width: 500px;
+    height: 300px;
+    background-position: center;
+}
+
 
 .top-box-a-contato {
     width: 500px;
@@ -112,12 +219,10 @@ export default {
 
 .top-box-a-contato-2 {
     display: flex;
-    justify-content: flex-end;
 }
 
 .top-box-a-contato-1 {
     display: flex;
-    justify-content: flex-end;
 }
 
 .top-box-a-sobrenos {
