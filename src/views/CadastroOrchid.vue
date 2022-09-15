@@ -82,6 +82,10 @@ export default {
 </script>
 
 <style>
+.top-box-orchid-logo {
+    z-index: 1;
+}
+
 .logo-orchid-cadastro {
     display: grid;
     width: 280px;
@@ -89,17 +93,19 @@ export default {
 
 .cadastro {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    background: linear-gradient(#0c0e10, #24282E);
+    /* background: linear-gradient(#0c0e10, #24282E); */
     width: 100%;
     height: 100%;
     position: absolute;
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
+    grid-template-areas:
+    'logo-orchid-cadastro'
+    'form-cadastro';
 }
 
 .form-cadastro {
-    margin: 10rem auto;
     border: solid #B04141;
     border-width: 1px;
     padding: 2rem;
@@ -107,7 +113,13 @@ export default {
     height: 30rem;
     display: grid;
     justify-content: center;
+    align-items: center;
     margin: 0;
+    background: linear-gradient(#0c0e10, #24282E);
+    z-index: 1;
+    margin-left: 2000px;
+    margin-top: 500px;
+    position: fixed;
 }
 
 

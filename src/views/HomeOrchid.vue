@@ -1,68 +1,81 @@
 <template>
-<div class='tudo-1'>
-    <section class="info">
-        <div class="bgordem">
-          <header class="showcase">
-            <h1>A ORDEM TE ESPERA</h1>
+<div class="homeorchid">
+    <PopUp :mostrarmodal="mostrarmodal" @fecharmodal='mostrarmodal=false'/>
+    <div class='tudo-1'>
+        <section class="info">
+            <div class="bgordem">
+            <header class="showcase">
+                <h1>A ORDEM TE ESPERA</h1>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                bibendum dictum felis, bibendum bibendum ante ultricies vel.
+                </p>
+                <div to="/cadastro" @click="mostrarmodal = true" class="btn">Criar conta</div>
+                <a href="#" class="btn-two">Criar personagem</a>
+                <router-link to="/equipes" class="btn-two">Equipes</router-link>
+            </header>
+            </div>
+        </section>
+        <!-- FINAL IMAGEM DO ORDEM -->
+        <hr class="linecut" color="#B04141" />
+        <!-- TEXTOS E IMAGENS -->
+        <section class="inforpg">
+            <div class="top-box top-box-a">
+            <h1>AFINAL, O QUE É RPG?</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              bibendum dictum felis, bibendum bibendum ante ultricies vel.
+                RPG é a sigla para Role Playing Game que significa jogo de
+                interpretação de papéis ou personagens. Nesse gênero de jogo os
+                jogadores interpretam personagens imaginários em um universo
+                fictício, a história desses personagens é guiada ao longo das
+                sessões de RPG por um jogador denominado “mestre”. O mestre dita a
+                trama, controla os inimigos enfrentados pelos personagens dos outros
+                jogadores e interpreta os NPCs.
             </p>
-            <router-link to="/cadastro" class="btn">Criar conta</router-link>
-            <a href="#" class="btn-two">Criar personagem</a>
-            <router-link to="/equipes" class="btn-two">Equipes</router-link>
-          </header>
-        </div>
-      </section>
-      <!-- FINAL IMAGEM DO ORDEM -->
-      <hr class="linecut" color="#B04141" />
-      <!-- TEXTOS E IMAGENS -->
-      <section class="inforpg">
-        <div class="top-box top-box-a">
-          <h1>AFINAL, O QUE É RPG?</h1>
-          <p>
-            RPG é a sigla para Role Playing Game que significa jogo de
-            interpretação de papéis ou personagens. Nesse gênero de jogo os
-            jogadores interpretam personagens imaginários em um universo
-            fictício, a história desses personagens é guiada ao longo das
-            sessões de RPG por um jogador denominado “mestre”. O mestre dita a
-            trama, controla os inimigos enfrentados pelos personagens dos outros
-            jogadores e interpreta os NPCs.
-          </p>
-        </div>
-        <br />
+            </div>
+            <br />
 
-        <br />
-        <div class="top-box top-box-b">
-          <img src="@/assets/rpgdemesa.png" alt="" />
-        </div>
-      </section>
-      <hr class="linecut" color="#B04141" />
-      <section class="inforpg-2">
-        <div class="top-box top-box-a">
-          <img src="@/assets/ordem2.jpeg" alt="" />
-        </div>
+            <br />
+            <div class="top-box top-box-b">
+            <img src="@/assets/rpgdemesa.png" alt="" />
+            </div>
+        </section>
+        <hr class="linecut" color="#B04141" />
+        <section class="inforpg-2">
+            <div class="top-box top-box-a">
+            <img src="@/assets/ordem2.jpeg" alt="" />
+            </div>
 
-        <div class="top-box top-box-b">
-          <h1>ORDEM PARANORMAL RPG</h1>
-          <p>
-            Nibh ipsum consequat nisl vel pretium lectus quam. Sed egestas
-            egestas fringilla phasellus faucibus scelerisque eleifend donec
-            pretium. Risus sed vulputate odio ut enim blandit volutpat maecenas
-            volutpat. Nunc sed augue lacus viverra vitae congue eu consequat ac.
-            Non tellus orci ac auctor. Ante in nibh mauris cursus mattis.
-            Facilisi etiam dignissim diam quis enim lobortis scelerisque. Id
-            aliquet lectus proin nibh nisl. Elit eget gravida cum sociis natoque
-            penatibus. Eu scelerisque felis imperdiet proin fermentum leo vel.
-          </p>
-        </div>
-      </section>
+            <div class="top-box top-box-b">
+            <h1>ORDEM PARANORMAL RPG</h1>
+            <p>
+                Nibh ipsum consequat nisl vel pretium lectus quam. Sed egestas
+                egestas fringilla phasellus faucibus scelerisque eleifend donec
+                pretium. Risus sed vulputate odio ut enim blandit volutpat maecenas
+                volutpat. Nunc sed augue lacus viverra vitae congue eu consequat ac.
+                Non tellus orci ac auctor. Ante in nibh mauris cursus mattis.
+                Facilisi etiam dignissim diam quis enim lobortis scelerisque. Id
+                aliquet lectus proin nibh nisl. Elit eget gravida cum sociis natoque
+                penatibus. Eu scelerisque felis imperdiet proin fermentum leo vel.
+            </p>
+            </div>
+        </section>
+    </div>
 </div>
 </template>
 
 <script>
-export default {
+import PopUp from '@/components/PopUp.vue';
 
+export default {
+    components: {
+        PopUp
+    },
+    data () {
+        return {
+            mostrarmodal: false,
+            mostrar: false,
+        }
+    }
 }
 </script>
 
