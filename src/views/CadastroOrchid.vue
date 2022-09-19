@@ -84,11 +84,8 @@ export default {
 <style>
 .top-box-orchid-logo {
     z-index: 1;
-}
+    /* backdrop-filter: blur(10px); */
 
-.logo-orchid-cadastro {
-    display: grid;
-    width: 280px;
 }
 
 .cadastro {
@@ -103,8 +100,18 @@ export default {
     grid-template-areas:
     'logo-orchid-cadastro'
     'form-cadastro';
+    position: fixed;
+    z-index: 1;
+    margin-top: 500px;
+    z-index: 1;
 }
 
+.logo-orchid-cadastro {
+    display: grid;
+    width: 280px;
+    margin-left: 2000px;
+    margin-bottom: 200px;
+}
 .form-cadastro {
     border: solid #B04141;
     border-width: 1px;
