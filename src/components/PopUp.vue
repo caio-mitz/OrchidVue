@@ -4,7 +4,7 @@
             <div class="fundo">
     <div class="top-box top-box-orchid-logo">
         <router-link to="/"><img class="logo-orchid-cadastro" src="@/assets/logo-orchid.png" alt=""></router-link>
-    <form action="" class="form-cadastro">
+    <form action="" class="form-cadastro" id="cadastro">
 
 <!-- TÍTULO -->
     <section class="showcase-cadastro-1">
@@ -83,6 +83,29 @@
 <script>
 export default {
     props: ['mostrarmodal'],
+    mounted () {
+        let dom = document.querySelector('html') 
+        const modal = document.getElementById('cadastro')
+        console.log(modal)
+        dom.addEventListener('click', (e)=>{
+            let elementosFilhos = []
+            let todosOsElementos = e.path.splice(0 , e.path.length -3)
+            todosOsElementos.forEach(element=>{
+                element.classList.forEach(classe=>{
+                    if(classe == 'form-cadastro'){
+                        elementosFilhos.push(element)
+                    }
+                })
+            })
+            if(this.mostrarmodal == true){
+                if(elementosFilhos.length == 0){
+                    console.log('fechando!!')
+                    this.$emit('fecharmodal')  
+
+                }
+            }
+        })
+    }
 }
 </script>
 
