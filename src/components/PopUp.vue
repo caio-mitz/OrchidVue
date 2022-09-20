@@ -2,79 +2,81 @@
     <div v-show="mostrarmodal" class="modal-cadastro">
         <div class="cadastro">
             <div class="fundo">
-    <div class="top-box top-box-orchid-logo">
-        <router-link to="/"><img class="logo-orchid-cadastro" src="@/assets/logo-orchid.png" alt=""></router-link>
-    <form action="" class="form-cadastro" id="cadastro">
+                <div class="top-box top-box-orchid-logo">
+                    <router-link to="/"><img class="logo-orchid-cadastro" src="@/assets/logo-orchid.png" alt="">
+                    </router-link>
+                    <form action="" class="form-cadastro" id="cadastro">
 
-<!-- TÍTULO -->
-    <section class="showcase-cadastro-1">
-        <div class="top-box top-box-a-cadastro">
-            <h1>CADASTRE-SE GRATUITAMENTE</h1>
-        </div>
+                        <!-- TÍTULO -->
+                        <section class="showcase-cadastro-1">
+                            <div class="top-box top-box-a-cadastro">
+                                <h1>CADASTRE-SE GRATUITAMENTE</h1>
+                            </div>
 
-        <div class="top-box top-box-b-cadastro">
-            <button class="google-btn">Cadastre-se com Google</button>
-        </div>
-    </section>
-<!-- FIM DO TÍTULO -->
+                            <div class="top-box top-box-b-cadastro">
+                                <button class="google-btn">Cadastre-se com Google</button>
+                            </div>
+                        </section>
+                        <!-- FIM DO TÍTULO -->
 
-<!-- LINHA -->
-    <section class="showcase-cadastro-2">
-        <div class="top-box top-box-a-cadastro">
-            <hr color="#B04141">
-        </div>
+                        <!-- LINHA -->
+                        <section class="showcase-cadastro-2">
+                            <div class="top-box top-box-a-cadastro">
+                                <hr color="#B04141">
+                            </div>
 
-        <div class="top-box top-box-b-cadastro">
-            <p>OU</p>
-        </div>
+                            <div class="top-box top-box-b-cadastro">
+                                <p>OU</p>
+                            </div>
 
-        <div class="top-box top-box-c-cadastro">
-            <hr color="#B04141">
-        </div>
-    </section>
-<!-- FIM DA LINHA -->
+                            <div class="top-box top-box-c-cadastro">
+                                <hr color="#B04141">
+                            </div>
+                        </section>
+                        <!-- FIM DA LINHA -->
 
-<!-- INPUTS -->
-    <section class="showcase-cadastro-3">
-        <div class="top-box top-box-a-cadastro">
-            <input type="text" placeholder="Nome" name="nome" class="input-register">
-        </div>
+                        <!-- INPUTS -->
+                        <section class="showcase-cadastro-3">
+                            <div class="top-box top-box-a-cadastro">
+                                <input type="text" placeholder="Nome" name="nome" class="input-register">
+                            </div>
 
-        <div class="top-box top-box-b-cadastro">
-            <input type="text" placeholder="Sobrenome" name="sobrenome" class="input-register">
-        </div>
-    </section>
+                            <div class="top-box top-box-b-cadastro">
+                                <input type="text" placeholder="Sobrenome" name="sobrenome" class="input-register">
+                            </div>
+                        </section>
 
-    <section class="showcase-cadastro-4">
-        <div class="top-box top-box-a-cadastro">
-            <input type="text" placeholder="Nome de usuário" name="username" class="input-register">
-        </div>
-    </section>
+                        <section class="showcase-cadastro-4">
+                            <div class="top-box top-box-a-cadastro">
+                                <input type="text" placeholder="Nome de usuário" name="username" class="input-register">
+                            </div>
+                        </section>
 
-    <section class="showcase-cadastro-5">
-        <div class="top-box top-box-a-cadastro">
-            <input type="text" placeholder="Endereço de e-mail" name="email" class="input-register">
-        </div>
-    </section>
+                        <section class="showcase-cadastro-5">
+                            <div class="top-box top-box-a-cadastro">
+                                <input type="text" placeholder="Endereço de e-mail" name="email" class="input-register">
+                            </div>
+                        </section>
 
-    <section class="showcase-cadastro-6">
-        <div class="top-box top-box-a-cadastro">
-            <input type="text" placeholder="Crie sua senha" name="senha-1" class="input-register">
-        </div>
-    </section>
+                        <section class="showcase-cadastro-6">
+                            <div class="top-box top-box-a-cadastro">
+                                <input type="text" placeholder="Crie sua senha" name="senha-1" class="input-register">
+                            </div>
+                        </section>
 
-    <section class="showcase-cadastro-7">
-        <div class="top-box top-box-a-cadastro">
-            <input type="text" placeholder="Confirme sua senha" name="senha-1" class="input-register">
-        </div>
+                        <section class="showcase-cadastro-7">
+                            <div class="top-box top-box-a-cadastro">
+                                <input type="text" placeholder="Confirme sua senha" name="senha-1"
+                                    class="input-register">
+                            </div>
 
-        <div class="top-box top-box-b-cadastro">
-            <button class="create-acc-btn">Criar conta</button>
-        </div>
-    </section>
-    <button @click="$emit('fecharmodal')">button</button>
-</form>
-</div>
+                            <div class="top-box top-box-b-cadastro">
+                                <button class="create-acc-btn">Criar conta</button>
+                            </div>
+                        </section>
+                        <button @click="$emit('fecharmodal')">button</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -83,24 +85,24 @@
 <script>
 export default {
     props: ['mostrarmodal'],
-    mounted () {
-        let dom = document.querySelector('html') 
+    mounted() {
+        let dom = document.querySelector('html')
         const modal = document.getElementById('cadastro')
         console.log(modal)
-        dom.addEventListener('click', (e)=>{
+        dom.addEventListener('click', (e) => {
             let elementosFilhos = []
-            let todosOsElementos = e.path.splice(0 , e.path.length -3)
-            todosOsElementos.forEach(element=>{
-                element.classList.forEach(classe=>{
-                    if(classe == 'form-cadastro'){
+            let todosOsElementos = e.path.splice(0, e.path.length - 3)
+            todosOsElementos.forEach(element => {
+                element.classList.forEach(classe => {
+                    if (classe == 'form-cadastro') {
                         elementosFilhos.push(element)
                     }
                 })
             })
-            if(this.mostrarmodal == true){
-                if(elementosFilhos.length == 0){
+            if (this.mostrarmodal == true && e.target != document.querySelector('#abrir-cadastro') && e.target != document.querySelector('#abrir-cadastro1')) {
+                if (elementosFilhos.length == 0) {
                     console.log('fechando!!')
-                    this.$emit('fecharmodal')  
+                    this.$emit('fecharmodal')
 
                 }
             }
@@ -110,10 +112,9 @@ export default {
 </script>
 
 <style>
-
 .fundo {
     backdrop-filter: blur(3 px);
-    background-color: rgba(0,0,0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     height: 100rem;
     width: 500rem;
     padding-top: 200px;
@@ -143,8 +144,8 @@ export default {
     align-items: center;
     justify-content: center;
     grid-template-areas:
-    'logo-orchid-cadastro'
-    'form-cadastro';
+        'logo-orchid-cadastro'
+        'form-cadastro';
     position: fixed;
     z-index: 1;
     margin-top: 600px;
@@ -157,6 +158,7 @@ export default {
     margin-left: 2000px;
     margin-bottom: 200px;
 }
+
 .form-cadastro {
     border: solid #B04141;
     border-width: 1px;
@@ -196,9 +198,9 @@ export default {
 .showcase-cadastro-1 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: 
-    'top-box-a-cadastro'
-    'top-box-b-cadastro';
+    grid-template-areas:
+        'top-box-a-cadastro'
+        'top-box-b-cadastro';
 }
 
 .showcase-cadastro-1 h1 {
@@ -236,8 +238,8 @@ export default {
 .showcase-cadastro-2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-    'top-box-a-cadastro top-box-b-cadastro top-box-c-cadastro';
+    grid-template-areas:
+        'top-box-a-cadastro top-box-b-cadastro top-box-c-cadastro';
 }
 
 .showcase-cadastro-2 .top-box {
@@ -282,8 +284,8 @@ export default {
 .showcase-cadastro-3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    'top-box-a-cadastro top-box-b-cadastro';
+    grid-template-areas:
+        'top-box-a-cadastro top-box-b-cadastro';
     /* height: 40px; */
 }
 
@@ -316,8 +318,8 @@ export default {
 .showcase-cadastro-4 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: 
-    'top-box-a-cadastro';
+    grid-template-areas:
+        'top-box-a-cadastro';
 }
 
 .showcase-cadastro-4 .top-box {
@@ -325,15 +327,15 @@ export default {
     align-items: center;
 }
 
-.showcase-cadastro-4 .top-box-a-cadastro input{
-    width: 780px; 
+.showcase-cadastro-4 .top-box-a-cadastro input {
+    width: 780px;
 }
 
 .showcase-cadastro-5 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: 
-    'top-box-a-cadastro';
+    grid-template-areas:
+        'top-box-a-cadastro';
 }
 
 .showcase-cadastro-5 .top-box {
@@ -341,15 +343,15 @@ export default {
     align-items: center;
 }
 
-.showcase-cadastro-5 .top-box-a-cadastro input{
-    width: 780px; 
+.showcase-cadastro-5 .top-box-a-cadastro input {
+    width: 780px;
 }
 
 .showcase-cadastro-6 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: 
-    'top-box-a-cadastro';
+    grid-template-areas:
+        'top-box-a-cadastro';
 }
 
 .showcase-cadastro-6 .top-box {
@@ -357,15 +359,15 @@ export default {
     align-items: center;
 }
 
-.showcase-cadastro-6 .top-box-a-cadastro input{
-    width: 780px; 
+.showcase-cadastro-6 .top-box-a-cadastro input {
+    width: 780px;
 }
 
 .showcase-cadastro-7 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    'top-box-a-cadastro top-box-a-cadastro top-box-b-cadastro';
+    grid-template-areas:
+        'top-box-a-cadastro top-box-a-cadastro top-box-b-cadastro';
 }
 
 .showcase-cadastro-7 .top-box {
