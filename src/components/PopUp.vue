@@ -74,7 +74,7 @@
                                 <button class="create-acc-btn">Criar conta</button>
                             </div>
                         </section>
-                        <button @click="$emit('fecharmodal')">button</button>
+                        <button @click="$emit('fecharmodal')" class="fechar-botao">Fechar</button>
                     </form>
                 </div>
             </div>
@@ -112,9 +112,25 @@ export default {
 </script>
 
 <style>
+.fechar-botao {
+    color: #B04141;
+    text-decoration: none;
+    padding: 0.8rem;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: none;
+    border: none;
+    width: 100px;
+    height: 10px;
+}
+
 .fundo {
-    backdrop-filter: blur(3 px);
-    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10 px);
+    background-color: rgba(0, 0, 0, 0.7);
     height: 100rem;
     width: 500rem;
     padding-top: 200px;
@@ -217,6 +233,7 @@ export default {
     background-color: var(--primary);
     color: var(--light);
     padding: 0.6rem 1.3rem;
+    margin-top: 10px;
     text-decoration: none;
     border: solid 1px;
     border-color: var(--red);
@@ -227,6 +244,7 @@ export default {
     align-items: center;
     justify-content: center;
     width: 250px;
+    cursor: pointer;
 }
 
 .showcase-cadastro-1 .top-box-b-cadastro {
@@ -401,5 +419,6 @@ export default {
     border: 2px;
     width: 383px;
     height: 40px;
+    cursor: pointer;
 }
 </style>
