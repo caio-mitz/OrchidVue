@@ -1,40 +1,64 @@
 <template>
-<div class="tudo">
-  <header class="top-header">
-        <nav class="main-nav">
-            <ul>
-                <div class="junta">
-                    <section class="logo">
-                        <li><router-link to="/"><img src="@/assets/logo-orchid.png" alt=""
-                            /></router-link></li>
-                    </section>
-                    <section class="main-left">
+    <div>
 
-                        <li><a class="link" href="#">Fichas</a>
-                        <linha>|</linha>
-                        <router-link class="link" to="/equipes">Equipes</router-link></li>
-                    </section>
-                </div>
-                <section class="main-right">
-                    <li>
-                    <router-link class="link" to="/login">Login</router-link>
-                    <linha>|</linha>
-                    <router-link class="link createacc" to="cadastro">Criar conta</router-link>
-                    </li>
-                </section>
-            </ul>
-        </nav>
-    </header>
-</div>
+        <div class="tudo">
+            <header class="top-header">
+                <nav class="main-nav">
+                    <ul>
+                        <div class="junta">
+                            <section class="logo">
+                                <li>
+                                    <router-link to="/"><img src="@/assets/logo-orchid.png" alt="" /></router-link>
+                                </li>
+                            </section>
+                            <section class="main-left">
+
+                                <li><a class="link" href="#">Fichas</a>
+                                    <linha>|</linha>
+                                    <router-link class="link" to="/equipes">Equipes</router-link>
+                                </li>
+                            </section>
+                        </div>
+                        <section class="main-right">
+                            <li class="botaologin">
+                                <router-link class="link" to="/login">Login</router-link>
+                                <linha>|</linha>
+                                <div class="link createacc" @click="mostrarmodal = true" id="abrir-cadastro1">Criar
+                                    conta</div>
+                            </li>
+                        </section>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <PopUp :mostrarmodal="mostrarmodal" @fecharmodal='mostrarmodal=false' />
+
+    </div>
 </template>
 
 <script>
 export default {
-
+    components: {
+        PopUp
+    },
+    data() {
+        return {
+            mostrarmodal: false
+        }
+    }
 }
+import PopUp from '@/components/PopUp.vue'
 </script>
 
 <style scoped>
+.botaologin {
+    display: flex;
+}
+
+.botaologin .link {
+    cursor: pointer;
+}
+
 .tudo {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
@@ -46,7 +70,8 @@ export default {
     background-color: #0c0e10;
     width: 100%;
 }
-.main-nav{
+
+.main-nav {
     display: flex;
     width: 100%;
 }
@@ -79,7 +104,7 @@ export default {
     justify-content: left;
     align-items: center;
     list-style: none;
-    
+
 }
 
 .main-nav .main-right {
@@ -87,7 +112,7 @@ export default {
     justify-content: right;
     align-items: center;
     list-style: none;
-    
+
 }
 
 .main-nav ul {
@@ -102,19 +127,20 @@ export default {
         'logo main-left main-right'; */
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
+
 .main-nav ul:last-child {
     margin-right: 50px;
 }
 
-.main-nav .junta{
+.main-nav .junta {
     display: flex
 }
-.main-nav a {
+
+.main-nav .link {
     color: #B04141;
     text-decoration: none;
     padding: 0.8rem;
     font-size: 20px;
     font-weight: bold;
 }
-
 </style>

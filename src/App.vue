@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  
+  // oi olá
 }
 </script>
 
