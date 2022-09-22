@@ -66,10 +66,12 @@
 
 <script>
 import PopUp from '@/components/PopUp.vue';
+import PopUpLogin from '@/components/PopUpLogin.vue';
 
 export default {
     components: {
-        PopUp
+        PopUp,
+        PopUpLogin
     },
     data() {
         return {
