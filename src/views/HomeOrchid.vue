@@ -7,8 +7,7 @@
                     <header class="showcase">
                         <h1>A ORDEM TE ESPERA</h1>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                            bibendum dictum felis, bibendum bibendum ante ultricies vel.
+                            Crie sua ficha de Ordem Paranormal, junte-se com seus amigos e divirta-se! Nossa única intenção é o seu entretenimento.
                         </p>
                         <div to="/cadastro" @click="mostrarmodal = true" class="btn" id="abrir-cadastro">Criar conta
                         </div>
