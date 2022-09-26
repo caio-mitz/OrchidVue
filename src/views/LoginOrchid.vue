@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
 <div class="login">
     <!-- TÍTULO -->
     <div class="top-box top-box-orchid-logo">
@@ -364,4 +364,4 @@
 .top-box-a-login .forgot-pass:hover{
     text-decoration: underline;
 }
-</style>
+</style> -->

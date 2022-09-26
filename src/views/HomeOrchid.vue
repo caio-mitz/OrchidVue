@@ -123,10 +123,10 @@ linha {
     align-items: flex-start;
     justify-content: center;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
-    ;
     height: 100%;
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.5);
+    cursor: alias;
 }
 
 .showcase h1 {
@@ -284,6 +284,7 @@ h1 {
     border-color: #B04141;
     border-width: 1px;
     width: 200px;
+    cursor: pointer; 
 }
 
 .logo img {

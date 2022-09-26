@@ -30,25 +30,25 @@
     <section class="contato-section-2">
             <div class="element top-box-a-contato-2">
                 <ul>
-                    <li><a href="https://github.com/alisogs"><p>AlisoGS</p></a></li>
-                    <li><a href="https://github.com/caio-mitz"><p>caio-mitz</p></a></li>
-                    <li><a href=""><p>maria-nichelle</p></a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/alisogs"><p>AlisoGS</p></a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/caio-mitz"><p>caio-mitz</p></a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/mariaeduardanichelle"><p>mariaeduardanichelle</p></a></li>
                 </ul>
             </div>
 
             <div class="element top-box-b-contato-2">
                 <ul>
-                    <li><a href="https://www.instagram.com/aliso_gab/"><p>@aliso_gab</p></a></li>
-                    <li><a href="https://www.instagram.com/caio_mitz/"><p>@caio_mitz</p></a></li>
-                    <li><a href=""><p>@maria-nichelle</p></a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/aliso_gab/"><p>@aliso_gab</p></a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/caio_mitz/"><p>@caio_mitz</p></a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/maria.nichelle/"><p>@maria.nichelle</p></a></li>
                 </ul>
             </div>
 
             <div class="top-box-c-contato-2">
                 <ul>
-                    <li><a href="https://twitter.com/alissogabsantos"><p>@alissogabsantos</p></a></li>
-                    <li><a href="https://twitter.com/caiodepaz"><p>@caiodepaz</p></a></li>
-                    <li><a href=""><p>@maria-nichelle</p></a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/alissogabsantos"><p>@alissogabsantos</p></a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/caiodepaz"><p>@caiodepaz</p></a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href=""><p>@maria-nichelle</p></a></li>
                 </ul>
             </div>
     </section>

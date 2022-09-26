@@ -129,7 +129,7 @@ export default {
 }
 
 .fundo {
-    backdrop-filter: blur(10 px);
+    /* backdrop-filter: blur(10 px); */
     background-color: rgba(0, 0, 0, 0.7);
     height: 100rem;
     width: 500rem;
@@ -142,6 +142,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .top-box-orchid-logo {
@@ -164,7 +165,6 @@ export default {
         'form-cadastro';
     position: fixed;
     z-index: 1;
-    margin-top: 600px;
     z-index: 1;
 }
 

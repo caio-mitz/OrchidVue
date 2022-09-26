@@ -1,7 +1,7 @@
 <template>
     <div v-show="mostrarmodalLogin" class="modal-login">
         <div class="login">
-            <div class="fundo">
+            <div class="fundo-login">
         <!-- TÍTULO -->
             <div class="top-box top-box-orchid-logo">
             <router-link to="/"><img class="logo-orchid-login" src="@/assets/logo-orchid.png" alt=""></router-link>
@@ -99,17 +99,30 @@
 </script>
 
 <style>
-.fundo {
+.modal-login {
+    position: absolute;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundo-login {
     backdrop-filter: blur(10 px);
     background-color: rgba(0, 0, 0, 0.7);
     height: 100rem;
     width: 500rem;
     padding-top: 200px;
+    position: fixed;
 }
 
 .logo-orchid-login {
     display: grid;
     width: 280px;
+    margin-top: 600px;
+    margin-left: 2000px;
+    z-index: 1;
+
 }
 
 .login {
@@ -117,16 +130,15 @@
     background: linear-gradient(#0c0e10, #24282E);
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
+    margin-top: 1000px;
+    margin-bottom: 750px;
 }
 
-.logo-orchid-login {
-    display: grid;
-    padding: 10px;
-}
 
 :root {
     --primary: #24282E; 
@@ -145,12 +157,17 @@
 .form-login {
     /* margin: 10rem auto; */
     border: solid #B04141;
+    background: linear-gradient(#0c0e10, #24282E);
     border-width: 1px;
     padding: 2rem;
     width: 0rem;
     height: 0rem;
     display: grid;
     justify-content: center;
+    z-index: 1;
+    margin-left: 2000px;
+    margin-top: 1200px;
+    position: fixed;
 }
 
 

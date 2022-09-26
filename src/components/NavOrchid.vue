@@ -55,6 +55,10 @@ export default {
 </script>
 
 <style scoped>
+
+linha {
+    margin-top: 15px;
+}
 .botaologin {
     display: flex;
 }
