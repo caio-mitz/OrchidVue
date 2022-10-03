@@ -1,77 +1,128 @@
-<!-- <template>
-<div class="login">
-    <!-- TÍTULO -->
-    <div class="top-box top-box-orchid-logo">
-        <router-link to="/"><img class="logo-orchid-login" src="@/assets/logo-orchid.png" alt=""></router-link>
-    <form action="" class="form-login">
-    <section class="showcase-login-1">
-            <div class="top-box top-box-a-login">
-                <h1>LOGIN</h1>
+<template>
+    <div v-show="mostrarmodalLogin" class="modal-login">
+        <div class="login">
+            <div class="fundo-login">
+        <!-- TÍTULO -->
+            <div class="top-box top-box-orchid-logo">
+            <router-link to="/"><img class="logo-orchid-login" src="@/assets/logo-orchid.png" alt=""></router-link>
+            <form action="" class="form-login" id="login">
+            <section class="showcase-login-1">
+                <div class="top-box top-box-a-login">
+                    <h1>LOGIN</h1>
+                </div>
+
+                <div class="top-box top-box-b-3">
+                    <button class="google-btn">Entre com Google</button>
+                </div>
+            </section>
+        <!-- FIM DO TÍTULO -->
+
+        <!-- LINHA -->
+            <section class="showcase-login-2">
+                <div class="top-box top-box-a-login">
+                    <hr color="#B04141">
+                </div>
+
+                <div class="top-box top-box-b-3">
+                    <p>OU</p>
+                </div>
+
+                <div class="top-box top-box-c-login">
+                    <hr color="#B04141">
+                </div>
+            </section>
+        <!-- FIM DA LINHA -->
+
+        <!-- INPUTS -->
+
+            <section class="showcase-login-4">
+                <div class="top-box top-box-a-login">
+                    <input type="text" placeholder="Nome de usuário ou endereço de e-mail" name="username" class="input-register">
+                </div>
+            </section>
+
+            <section class="showcase-login-5">
+                <div class="top-box top-box-a-login">
+                    <input type="text" placeholder="Senha" name="senha" class="input-register">
+                </div>
+            </section>
+
+            <section class="showcase-login-7">
+
+                <div class="top-box top-box-b-3">
+                    <button class="create-acc-btn">Login</button>
+                </div>
+            </section>
+
+            <section class="showcase-login-extra">
+                <div class="top-box-a-login">
+                    <a href="#" class="forgot-pass">Esqueceu sua senha?</a>
+                </div>
+            </section>
+            
+        <!-- FIM DOS INPUTS -->
+        <button @click="$emit('fecharmodal')" class="fechar-botao">Fechar</button>
+        </form>
+                </div>
             </div>
-
-            <div class="top-box top-box-b-3">
-                <button class="google-btn">Entre com Google</button>
-            </div>
-        </section>
-    <!-- FIM DO TÍTULO -->
-
-    <!-- LINHA -->
-        <section class="showcase-login-2">
-            <div class="top-box top-box-a-login">
-                <hr color="#B04141">
-            </div>
-
-            <div class="top-box top-box-b-3">
-                <p>OU</p>
-            </div>
-
-            <div class="top-box top-box-c-login">
-                <hr color="#B04141">
-            </div>
-        </section>
-    <!-- FIM DA LINHA -->
-
-    <!-- INPUTS -->
-
-        <section class="showcase-login-4">
-            <div class="top-box top-box-a-login">
-                <input type="text" placeholder="Nome de usuário ou endereço de e-mail" name="username" class="input-register">
-            </div>
-        </section>
-
-        <section class="showcase-login-5">
-            <div class="top-box top-box-a-login">
-                <input type="text" placeholder="Senha" name="senha" class="input-register">
-            </div>
-        </section>
-
-        <section class="showcase-login-7">
-
-            <div class="top-box top-box-b-3">
-                <button class="create-acc-btn">Login</button>
-            </div>
-        </section>
-
-        <section class="showcase-login-extra">
-            <div class="top-box-a-login">
-                <a href="#" class="forgot-pass">Esqueceu sua senha?</a>
-            </div>
-        </section>
-        
-    <!-- FIM DOS INPUTS -->
-
-    </form>
-</div>
-</div>
+        </div>
+    </div>
 </template>
 
 <script>
+    export default {
+    props: ['mostrarmodalLogin'],
+    mounted() {
+        let dom = document.querySelector('html')
+        const modal = document.getElementById('login')
+        console.log(modal)
+        dom.addEventListener('click', (e) => {
+            let elementosFilhos = []
+            let todosOsElementos = e.path.splice(0, e.path.length - 3)
+            todosOsElementos.forEach(element => {
+                element.classList.forEach(classe => {
+                    if (classe == 'form-login') {
+                        elementosFilhos.push(element)
+                    }
+                })
+            })
+            if (this.mostrarmodalLogin == true && e.target != document.querySelector('#abrir-login1')) {
+                if (elementosFilhos.length == 0) {
+                    console.log('fechando login!!')
+                    this.$emit('fecharmodal')
+
+                }
+            }
+        })
+    }
+}
 </script>
 
 <style>
+.modal-login {
+    position: absolute;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundo-login {
+    backdrop-filter: blur(10 px);
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100rem;
+    width: 500rem;
+    padding-top: 200px;
+    position: fixed;
+}
+
 .logo-orchid-login {
     display: grid;
     width: 280px;
+    margin-top: 600px;
+    margin-left: 2000px;
+    z-index: 1;
+
 }
 
 .login {
@@ -79,16 +130,15 @@
     background: linear-gradient(#0c0e10, #24282E);
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
+    margin-top: 1000px;
+    margin-bottom: 750px;
 }
 
-.logo-orchid-login {
-    display: grid;
-    padding: 10px;
-}
 
 :root {
     --primary: #24282E; 
@@ -107,12 +157,17 @@
 .form-login {
     /* margin: 10rem auto; */
     border: solid #B04141;
+    background: linear-gradient(#0c0e10, #24282E);
     border-width: 1px;
     padding: 2rem;
-    width: 50rem;
-    height: 22rem;
+    width: 0rem;
+    height: 0rem;
     display: grid;
     justify-content: center;
+    z-index: 1;
+    margin-left: 2000px;
+    margin-top: 1200px;
+    position: fixed;
 }
 
 
@@ -364,4 +419,4 @@
 .top-box-a-login .forgot-pass:hover{
     text-decoration: underline;
 }
-</style> -->
+</style>

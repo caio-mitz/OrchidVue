@@ -6,8 +6,20 @@
             <div class="top-box top-box-a-entrarequipe">
                 <h1>Entrar em equipe</h1>
             </div>
+            <div class="top-box top-box-c-entrarequipe">
+                <select class="select-fichas">
+                    <option value="0">Selecione sua ficha!</option>
+                    <option value="0">Aniela Ukryty</option>
+                    <option value="0">Bruna Sampaio</option>
+                    <option value="0">Jaime Orthuga</option>
+                    <option value="0">Leandro Weiss</option>
+                    <option value="0">Mauro Nunes</option>
+                    <option value="0">Maya Shizuri</option>
+                </select>
+            </div>
 
             <div class="top-box top-box-b-entrarequipe">
+                <p class="desc-entrarequipe">Insira o código da equipe abaixo:</p>
                 <input type="text" class="input-entrarequipe" placeholder="Código da equipe" name="entrarequipe">
             </div>
 
@@ -32,6 +44,20 @@ export default {
     --light: #ffffff;
     --red: #B04141;
     --shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+.desc-entrarequipe {
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+}
+
+.select-fichas {
+    border: solid 1px var(--red);
+    background-color: var(--primary);
+    height: 40px;
+    width: 100%;
+    color: white;
 }
 
 .entrarequipe {
@@ -86,6 +112,7 @@ export default {
     background-color: var(--primary);
     height: 40px;
     width: 100%;
+    color: white;
 }
 
 .showcase-entrarequipe-1 {
@@ -106,5 +133,6 @@ export default {
     border: 2px;
     width: 130px;
     height: 40px;
+    cursor: pointer;
 }
 </style>

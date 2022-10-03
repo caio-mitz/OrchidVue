@@ -21,7 +21,7 @@
                         </div>
                         <section class="main-right">
                             <li class="botaologin">
-                                <router-link class="link" to="/login">Login</router-link>
+                                <div class="link" @click="mostrarmodalLogin = true" id="abrir-login1">Login</div>
                                 <linha>|</linha>
                                 <div class="link createacc" @click="mostrarmodal = true" id="abrir-cadastro1">Criar
                                     conta</div>
@@ -32,25 +32,33 @@
             </header>
         </div>
         <PopUp :mostrarmodal="mostrarmodal" @fecharmodal='mostrarmodal=false' />
-
+        <PopUpLogin :mostrarmodalLogin="mostrarmodalLogin" @fecharmodal='mostrarmodalLogin=false' />
     </div>
 </template>
 
 <script>
+import PopUp from '@/components/PopUp.vue'
+import PopUpLogin from '@/components/PopUpLogin.vue'
 export default {
     components: {
-        PopUp
+        PopUp,
+        PopUpLogin
     },
     data() {
         return {
-            mostrarmodal: false
+            mostrarmodal: false,
+            mostrarmodalLogin: false,
+
         }
     }
 }
-import PopUp from '@/components/PopUp.vue'
 </script>
 
 <style scoped>
+
+linha {
+    margin-top: 15px;
+}
 .botaologin {
     display: flex;
 }

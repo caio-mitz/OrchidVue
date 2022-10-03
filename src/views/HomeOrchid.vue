@@ -7,8 +7,7 @@
                     <header class="showcase">
                         <h1>A ORDEM TE ESPERA</h1>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                            bibendum dictum felis, bibendum bibendum ante ultricies vel.
+                            Crie sua ficha de Ordem Paranormal, junte-se com seus amigos e divirta-se! Nossa única intenção é o seu entretenimento.
                         </p>
                         <div to="/cadastro" @click="mostrarmodal = true" class="btn" id="abrir-cadastro">Criar conta
                         </div>
@@ -66,10 +65,12 @@
 
 <script>
 import PopUp from '@/components/PopUp.vue';
+import PopUpLogin from '@/components/PopUpLogin.vue';
 
 export default {
     components: {
-        PopUp
+        PopUp,
+        PopUpLogin
     },
     data() {
         return {
@@ -121,10 +122,10 @@ linha {
     align-items: flex-start;
     justify-content: center;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
-    ;
     height: 100%;
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.5);
+    cursor: alias;
 }
 
 .showcase h1 {
@@ -282,6 +283,7 @@ h1 {
     border-color: #B04141;
     border-width: 1px;
     width: 200px;
+    cursor: pointer; 
 }
 
 .logo img {
