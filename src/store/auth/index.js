@@ -1,3 +1,5 @@
+import authService from '@/api/auth'
+
 export const auth ={
     namespaced: true,
     state: () => ({
@@ -15,8 +17,15 @@ export const auth ={
         }
     },
     actions: {
-        login( { commit }, user) {
-            commit (user)
+        async login( { commit }, user) {
+            try {
+                const userInfo = await authService.login(user)
+                commit ('setLoginInfo', userInfo)
+                return Promise.resolve(userInfo)
+            } catch (e) {
+                commit('setLogout')
+                return Promise.reject(e)
+            }
         },
         logout ({ commit }) {
             commit('setLogout')

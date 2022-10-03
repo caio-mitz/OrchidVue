@@ -114,6 +114,7 @@
     width: 500rem;
     padding-top: 200px;
     position: fixed;
+
 }
 
 .logo-orchid-login {
@@ -168,6 +169,7 @@
     margin-left: 2000px;
     margin-top: 1200px;
     position: fixed;
+    color: white;
 }
 
 
