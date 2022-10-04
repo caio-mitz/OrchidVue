@@ -43,7 +43,7 @@
 
             <section class="showcase-login-5">
                 <div class="top-box top-box-a-login">
-                    <input type="text" placeholder="Senha" name="senha" class="input-register">
+                    <input type="password" placeholder="Senha" name="senha" class="input-register"/>
                 </div>
             </section>
 

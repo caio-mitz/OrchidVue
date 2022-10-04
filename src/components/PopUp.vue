@@ -60,13 +60,13 @@
 
                         <section class="showcase-cadastro-6">
                             <div class="top-box top-box-a-cadastro">
-                                <input type="text" placeholder="Crie sua senha" name="senha-1" class="input-register">
+                                <input type="password" placeholder="Crie sua senha" name="senha-1" class="input-register">
                             </div>
                         </section>
 
                         <section class="showcase-cadastro-7">
                             <div class="top-box top-box-a-cadastro">
-                                <input type="text" placeholder="Confirme sua senha" name="senha-1"
+                                <input type="password" placeholder="Confirme sua senha" name="senha-1"
                                     class="input-register">
                             </div>
 
