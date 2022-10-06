@@ -37,13 +37,13 @@
 
             <section class="showcase-login-4">
                 <div class="top-box top-box-a-login">
-                    <input type="text" placeholder="Nome de usuário ou endereço de e-mail" name="username" class="input-register">
+                    <input style="color:white;" type="text" placeholder="Nome de usuário ou endereço de e-mail" name="username" class="input-register">
                 </div>
             </section>
 
             <section class="showcase-login-5">
                 <div class="top-box top-box-a-login">
-                    <input type="password" placeholder="Senha" name="senha" class="input-register">
+                    <input style="color:white;" type="password" placeholder="Senha" name="senha" class="input-register">
                 </div>
             </section>
 

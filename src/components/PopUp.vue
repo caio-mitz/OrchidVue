@@ -38,35 +38,35 @@
                         <!-- INPUTS -->
                         <section class="showcase-cadastro-3">
                             <div class="top-box top-box-a-cadastro">
-                                <input type="text" placeholder="Nome" name="nome" class="input-register">
+                                <input style="color:white;" type="text" placeholder="Nome" name="nome" class="input-register">
                             </div>
 
                             <div class="top-box top-box-b-cadastro">
-                                <input type="text" placeholder="Sobrenome" name="sobrenome" class="input-register">
+                                <input style="color:white;" type="text" placeholder="Sobrenome" name="sobrenome" class="input-register">
                             </div>
                         </section>
 
                         <section class="showcase-cadastro-4">
                             <div class="top-box top-box-a-cadastro">
-                                <input type="text" placeholder="Nome de usuário" name="username" class="input-register">
+                                <input style="color:white;" type="text" placeholder="Nome de usuário" name="username" class="input-register">
                             </div>
                         </section>
 
                         <section class="showcase-cadastro-5">
                             <div class="top-box top-box-a-cadastro">
-                                <input type="text" placeholder="Endereço de e-mail" name="email" class="input-register">
+                                <input style="color:white;" type="text" placeholder="Endereço de e-mail" name="email" class="input-register">
                             </div>
                         </section>
 
                         <section class="showcase-cadastro-6">
                             <div class="top-box top-box-a-cadastro">
-                                <input type="password" placeholder="Crie sua senha" name="senha-1" class="input-register">
+                                <input style="color:white;" type="password" placeholder="Crie sua senha" name="senha-1" class="input-register">
                             </div>
                         </section>
 
                         <section class="showcase-cadastro-7">
                             <div class="top-box top-box-a-cadastro">
-                                <input type="password" placeholder="Confirme sua senha" name="senha-1"
+                                <input style="color:white;" type="password" placeholder="Confirme sua senha" name="senha-1"
                                     class="input-register">
                             </div>
 
