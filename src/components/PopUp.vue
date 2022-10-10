@@ -54,7 +54,7 @@
 
                         <section class="showcase-cadastro-5">
                             <div class="top-box top-box-a-cadastro">
-                                <input style="color:white;" type="text" placeholder="Endereço de e-mail" name="email" class="input-register">
+                                <input style="color:white;" type="email" placeholder="Endereço de e-mail" name="email" class="input-register">
                             </div>
                         </section>
 
