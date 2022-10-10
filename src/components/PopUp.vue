@@ -84,6 +84,7 @@
 
 <script>
 export default {
+
     props: ['mostrarmodal'],
     mounted() {
         let dom = document.querySelector('html')

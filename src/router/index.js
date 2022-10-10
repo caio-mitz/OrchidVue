@@ -17,6 +17,7 @@ const routes = [
     component: () => import("@/layouts/DefaultOrchid.vue"),
     children: [
       {
+        name: HomeOrchid,
         path: "/",
         component: HomeOrchid,
       },

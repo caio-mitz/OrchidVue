@@ -66,6 +66,8 @@
 <script>
 import PopUp from '@/components/PopUp.vue';
 import PopUpLogin from '@/components/PopUpLogin.vue';
+import { mapState } from 'vuex'
+
 
 export default {
     components: {
@@ -77,6 +79,10 @@ export default {
             mostrarmodal: false,
             mostrar: false,
         }
+    },
+    name: 'HomeOrchid',
+    computed: {
+    ...mapState('auth', ['loggedIn'])
     }
 }
 </script>

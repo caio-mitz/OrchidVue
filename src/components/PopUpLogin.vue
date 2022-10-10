@@ -37,20 +37,20 @@
 
             <section class="showcase-login-4">
                 <div class="top-box top-box-a-login">
-                    <input style="color:white;" type="text" placeholder="Nome de usuário ou endereço de e-mail" name="username" class="input-register">
+                    <input v-model="usuario.username" style="color:white;" type="text" placeholder="Nome de usuário ou endereço de e-mail" name="username" class="input-register">
                 </div>
             </section>
 
             <section class="showcase-login-5">
                 <div class="top-box top-box-a-login">
-                    <input style="color:white;" type="password" placeholder="Senha" name="senha" class="input-register">
+                    <input v-model="usuario.password" style="color:white;" type="password" placeholder="Senha" name="senha" class="input-register">
                 </div>
             </section>
 
             <section class="showcase-login-7">
 
                 <div class="top-box top-box-b-3">
-                    <button class="create-acc-btn">Login</button>
+                    <button class="create-acc-btn" @click="submitLogin">Login</button>
                 </div>
             </section>
 
@@ -70,6 +70,8 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
+
     export default {
     props: ['mostrarmodalLogin'],
     mounted() {
@@ -94,6 +96,18 @@
                 }
             }
         })
+    },
+    data () {
+        return {
+            usuario: {},
+        }
+    },
+    methods: {
+        ...mapActions('auth', ['login']),
+        submitLogin() {
+            this.login(this.usuario)
+            this.$router.push({ name: HomeOrchid })
+        }
     }
 }
 </script>
