@@ -8,6 +8,7 @@ import CadastroOrchid from '@/views/CadastroOrchid.vue'
 import ContatoOrchid from '@/views/ContatoOrchid.vue'
 import CriarEquipe from '@/views/CriarEquipe.vue'
 import EntrarEquipe from '@/views/EntrarEquipe.vue'
+import FichaOrchid from '@/views/FichaOrchid.vue'
 
 Vue.use(VueRouter);
 
@@ -31,8 +32,12 @@ const routes = [
       },
       {
         path: '/contato',
-        component: ContatoOrchid
-      },    
+        component: ContatoOrchid,
+      },
+      {
+        path: '/ficha',
+        component: FichaOrchid,
+      },
     ],
   },
   {

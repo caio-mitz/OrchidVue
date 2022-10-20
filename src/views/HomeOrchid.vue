@@ -7,7 +7,8 @@
                     <header class="showcase">
                         <h1>A ORDEM TE ESPERA</h1>
                         <p>
-                            Crie sua ficha de Ordem Paranormal, junte-se com seus amigos e divirta-se! Nossa única intenção é o seu entretenimento.
+                            Crie sua ficha de Ordem Paranormal, junte-se com seus amigos e divirta-se! Nossa única
+                            intenção é o seu entretenimento.
                         </p>
                         <div to="/cadastro" @click="mostrarmodal = true" class="btn" id="abrir-cadastro">Criar conta
                         </div>
@@ -81,7 +82,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .tudo-1 {
     background: linear-gradient(#0c0e10, #24282E);
     color: #fff;
@@ -283,7 +284,7 @@ h1 {
     border-color: #B04141;
     border-width: 1px;
     width: 200px;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .logo img {
