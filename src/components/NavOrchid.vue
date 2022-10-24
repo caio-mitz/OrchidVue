@@ -13,7 +13,7 @@
                             </section>
                             <section class="main-left">
 
-                                <li><a class="link" href="#">Fichas</a>
+                                <li><router-link class="link" to="/ficha">Fichas</router-link>
                                     <linha>|</linha>
                                     <router-link class="link" to="/equipes">Equipes</router-link>
                                 </li>
