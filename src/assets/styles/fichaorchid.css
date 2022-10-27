@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding-top: 45px;
   }
   
   /* CONFIGURAÇÕES GERAIS */
@@ -28,6 +28,7 @@
     display: grid;
     grid-template-columns: 1fr, 2fr, 1fr;
     grid-template-areas: "info-1 info-2 info-2 info-3";
+    height: 800px;
   }
   
   /* FIM DA CONFIGURAÇÃO DA PÁGINA DA FICHA */
@@ -42,7 +43,7 @@
   }
   
   .input-nome, .input-classe, .input-jogador, .input-origem {
-    width: 400px;
+    width: 600px;
   }
 
   .input-nome {
@@ -87,7 +88,7 @@
   
 .nex-pers h1, .perodada-pers h1, .desl-pers h1, .quad-pers h1, .pvtotal-pers h1, .pvatual-pers h1, .santotal-pers h1, .sanatual-pers h1, .petotal-pers h1, .peatual-pers h1 {
   padding-top: 10px;
-  font-size: 10px; 
+  font-size: 10px;
 }
 
     .nex-pers {
@@ -95,6 +96,8 @@
       justify-content: end;
       align-items: center;
       padding: 10px;
+      width: 86px;
+      margin-left: 50px;
     }
     
     .perodada-pers {
@@ -102,20 +105,24 @@
       justify-content: start;
       align-items: center;
       padding: 10px;
+      width: 86px;
     }
     
     .desl-pers {
       /* display: flex; */
       justify-content: end;
       align-items: center;
-      padding: 10px;
+      padding-left: 10px;
+      width: 86px;
+      margin-left: 50px;
     }
   
     .quad-pers {
       /* display: flex; */
       justify-content: start;
       align-items: center;
-      padding: 10px;
+      padding-left: 10px;
+      width: 86px;
     }
   
     .pvtotal-pers {
@@ -123,6 +130,8 @@
       justify-content: end;
       align-items: center;
       padding: 10px;
+      width: 86px;
+      margin-left: 50px;
     }
   
     .pvatual-pers {
@@ -130,20 +139,24 @@
       justify-content: start;
       align-items: center;
       padding: 10px;
+      width: 86px;
     }
   
     .santotal-pers {
       /* display: flex; */
       justify-content: end;
       align-items: center;
-      padding: 10px;
+      padding-left: 10px;
+      width: 86px;
+      margin-left: 50px;
     }
   
     .sanatual-pers {
       /* display: flex; */
       justify-content: start;
       align-items: center;
-      padding: 10px;
+      padding-left: 10px;
+      width: 86px;
     }
   
     .petotal-pers {
@@ -151,6 +164,8 @@
       justify-content: end;
       align-items: center;
       padding: 10px;
+      width: 86px;
+      margin-left: 50px;
     }
   
     .peatual-pers {
@@ -158,6 +173,7 @@
       justify-content: start;
       align-items: center;
       padding: 10px;
+      width: 86px;
     }
   
   .input-nex {
@@ -251,25 +267,33 @@
   
   /* CAIXAS DOS PODERES, ITENS, ETC. */
   
+  .sub-info-2 {
+    justify-content: center;
+
+  }
+
   .itens-pers {
     background-color:#101214;
     border: solid var(--red) 2px;
     height: 172px;
-    width: 414px;
+    width: 1100px;
+    margin: 10px;
   }
   
   .proef-pers {
     background-color:#101214;
     border: solid var(--red) 2px;
     height: 121px;
-    width: 414px;
+    width: 1100px;
+    margin: 10px;
   }
   
   .habil-pers {
     background-color:#101214;
     border: solid var(--red) 2px;
     height: 172px;
-    width: 414px;
+    width: 1100px;
+    margin: 10px;
   }
   
   /* FIM DAS CAIXAS */
@@ -278,22 +302,30 @@
   
   .hex1 {
     padding: 10px;
+    height: 80px;
   }
   
   .hex2 {
     padding: 10px;
+    height: 80px;
   }
   
   .hex3 {
     padding: 10px;
+    height: 80px;
+    margin-top: -2px;
   }
   
   .hex4 {
     padding: 10px;
+    height: 80px;
+    margin-top: -50px;
   }
   
   .hex5 {
     padding: 10px;
+    height: 80px;
+    margin-top: -50px;
   }
   
   .hex1-pers {
@@ -349,7 +381,7 @@
   
   
   .logo-ordem img {
-    width: 223px;
+    width: 300px;
   }
   
   .info-1 {
@@ -366,12 +398,14 @@
       "pvtotal-pers pvatual-pers"
       "santotal-pers sanatual-pers"
       "petotal-pers peatual-pers";
+    width: 300px;
   }
   
   .info-2 {
     grid-area: info-2;
+    width: 1250px;
   }
-  
+
   .sub-info-2 {
     display: grid;
     grid-template-columns: repeat (4, 1fr);
@@ -383,18 +417,22 @@
       "proef-pers proef-pers proef-pers hex3-pers"
       "habil-pers habil-pers habil-pers hex4-pers"
       "habil-pers habil-pers habil-pers hex5-pers";
+    width: 1250px;
+    /* margin-left: 55px; */
   }
 
   .nome-pers, .classe-pers, .jogador-pers, .origem-pers {
     padding-top: 20px;
+    width: 600px;
+    margin: 0px 10px 10px 10px;
   }
   
   .nome-pers, .jogador-pers {
-    justify-content: start;
+    /* justify-content: start; */
   }
 
   .classe-pers, .origem-pers {
-    justify-content: end;
+    /* justify-content: end; */
   }
 
   .info-3 {
@@ -407,6 +445,8 @@
     grid-template-areas:
       "logo-ordem"
       "pericias-pers";
+    width: 300px;
+
   }
   
   /* REFERENCIANDO GRID AREAS */
@@ -485,6 +525,10 @@
   
   .logo-ordem {
     grid-area: logo-ordem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
   }
   
   .pericias-pers {
