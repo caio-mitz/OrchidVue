@@ -1,536 +1,552 @@
-
 .pos-foto {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 45px;
-  }
-  
-  /* CONFIGURAÇÕES GERAIS */
-  
-  :root {
-      --primary: #24282E; 
-      --secondary: #0c0e10;
-      --light: #ffffff;
-      --red: #B04141;
-      --dark: #101214;
-      --shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
-  }
-  
-  /* FIM DAS CONFIGURAÇÕES GERAIS */
-  
-  /* CONFIGURAÇÃO DA PÁGINA DA FICHA */
-  
-  .ficha-orchid {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    color: #ffffff;
-    background: linear-gradient(#0c0e10, #24282E);
-    display: grid;
-    grid-template-columns: 1fr, 2fr, 1fr;
-    grid-template-areas: "info-1 info-2 info-2 info-3";
-    height: 800px;
-  }
-  
-  /* FIM DA CONFIGURAÇÃO DA PÁGINA DA FICHA */
-  
-  /* INFORMAÇÕES INICIAIS DO PERSOGANEM (INPUTS) */
-  
-  .foto-pers {
-    width: 200px;
-    height: 225px;
-    background-color: #0c0e10;
-    border: solid #B04141;
-  }
-  
-  .input-nome, .input-classe, .input-jogador, .input-origem {
-    width: 600px;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 45px;
+}
 
-  .input-nome {
-    background-color:#101214;
-    border: solid var(--red) 2px;
-    height: 63px;
-    /* width: 400px; */
-    font-size: 20px;
-    color: #ffffff;
-  }
-  
-  .input-classe {
-    background-color:#101214;
-    border: solid var(--red) 2px;
-    height: 63px;
-    /* width: 240px; */
-    font-size: 20px;
-    color: #ffffff;
-  }
-  
-  .input-jogador {
-    background-color:#101214;
-    border: solid var(--red) 2px;
-    height: 63px;
-    /* width: 240px; */
-    font-size: 20px;
-    color: #ffffff;
-  }
-  
-  .input-origem {
-    background-color:#101214;
-    border: solid var(--red) 2px;
-    height: 63px;
-    /* width: 240px; */
-    font-size: 20px;
-    color: #ffffff;
-  }
-  
-  /* FIM DOS INPUTS */
-  
-  /* INFORMAÇÕES DE STATUS DO PERSONAGEM (INPUTS) */
-  
-.nex-pers h1, .perodada-pers h1, .desl-pers h1, .quad-pers h1, .pvtotal-pers h1, .pvatual-pers h1, .santotal-pers h1, .sanatual-pers h1, .petotal-pers h1, .peatual-pers h1 {
+/* CONFIGURAÇÕES GERAIS */
+
+:root {
+  --primary: #24282e;
+  --secondary: #0c0e10;
+  --light: #ffffff;
+  --red: #b04141;
+  --dark: #101214;
+  --shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* FIM DAS CONFIGURAÇÕES GERAIS */
+
+/* CONFIGURAÇÃO DA PÁGINA DA FICHA */
+
+.ficha-orchid {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  background: linear-gradient(#0c0e10, #24282e);
+  display: grid;
+  grid-template-columns: 1fr, 2fr, 1fr;
+  grid-template-areas: "info-1 info-2 info-2 info-3";
+  height: 800px;
+}
+
+/* FIM DA CONFIGURAÇÃO DA PÁGINA DA FICHA */
+
+/* INFORMAÇÕES INICIAIS DO PERSOGANEM (INPUTS) */
+
+.foto-pers {
+  width: 200px;
+  height: 225px;
+  background-color: #0c0e10;
+  border: solid #b04141;
+}
+
+.input-nome,
+.input-classe,
+.input-jogador,
+.input-origem {
+  width: 600px;
+}
+
+.input-nome {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 63px;
+  /* width: 400px; */
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.input-classe {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 63px;
+  /* width: 240px; */
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.input-jogador {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 63px;
+  /* width: 240px; */
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.input-origem {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 63px;
+  /* width: 240px; */
+  font-size: 20px;
+  color: #ffffff;
+}
+
+/* FIM DOS INPUTS */
+
+/* INFORMAÇÕES DE STATUS DO PERSONAGEM (INPUTS) */
+
+.nex-pers h1,
+.perodada-pers h1,
+.desl-pers h1,
+.quad-pers h1,
+.pvtotal-pers h1,
+.pvatual-pers h1,
+.santotal-pers h1,
+.sanatual-pers h1,
+.petotal-pers h1,
+.peatual-pers h1 {
   padding-top: 10px;
   font-size: 10px;
 }
 
-    .nex-pers {
-      /* display: flex; */
-      justify-content: end;
-      align-items: center;
-      padding: 10px;
-      width: 86px;
-      margin-left: 50px;
-    }
-    
-    .perodada-pers {
-      /* display: flex; */
-      justify-content: start;
-      align-items: center;
-      padding: 10px;
-      width: 86px;
-    }
-    
-    .desl-pers {
-      /* display: flex; */
-      justify-content: end;
-      align-items: center;
-      padding-left: 10px;
-      width: 86px;
-      margin-left: 50px;
-    }
-  
-    .quad-pers {
-      /* display: flex; */
-      justify-content: start;
-      align-items: center;
-      padding-left: 10px;
-      width: 86px;
-    }
-  
-    .pvtotal-pers {
-      /* display: flex; */
-      justify-content: end;
-      align-items: center;
-      padding: 10px;
-      width: 86px;
-      margin-left: 50px;
-    }
-  
-    .pvatual-pers {
-      /* display: flex; */
-      justify-content: start;
-      align-items: center;
-      padding: 10px;
-      width: 86px;
-    }
-  
-    .santotal-pers {
-      /* display: flex; */
-      justify-content: end;
-      align-items: center;
-      padding-left: 10px;
-      width: 86px;
-      margin-left: 50px;
-    }
-  
-    .sanatual-pers {
-      /* display: flex; */
-      justify-content: start;
-      align-items: center;
-      padding-left: 10px;
-      width: 86px;
-    }
-  
-    .petotal-pers {
-      /* display: flex; */
-      justify-content: end;
-      align-items: center;
-      padding: 10px;
-      width: 86px;
-      margin-left: 50px;
-    }
-  
-    .peatual-pers {
-      /* display: flex; */
-      justify-content: start;
-      align-items: center;
-      padding: 10px;
-      width: 86px;
-    }
-  
-  .input-nex {
-    background-color:#101214;
-    border: solid var(--red) 2px;
-    height: 63px;
-    width: 86px;
-    font-size: 40px;
-    color: #ffffff;
-  }
-  
-  .input-perodada {
-    background-color:#101214;
-    border: solid var(--red) 2px;
-    height: 63px;
-    width: 86px;
-    font-size: 40px;
-    color: #ffffff;
-  }
+.nex-pers {
+  /* display: flex; */
+  justify-content: end;
+  align-items: center;
+  padding: 10px;
+  width: 86px;
+  margin-left: 50px;
+}
 
-  .input-deslocamento {
-    background-color:#101214;
-    border: solid var(--red) 2px;
-    height: 63px;
-    width: 86px;
-    font-size: 40px;
-    color: #ffffff;
-  }
-  .input-quadrados {
-    background-color:#101214;
-    border: solid var(--red) 2px;
-    height: 63px;
-    width: 86px;
-    font-size: 40px;
-    color: #ffffff;
-  }
-  .input-pvtotal {
-    background-color:#101214;
-    border: solid var(--red) 2px;
-    height: 63px;
-    width: 86px;
-    font-size: 40px;
-    color: #ffffff;
-  }
-  .input-pvatual {
-    background-color:#101214;
-    border: solid var(--red) 2px;
-    height: 63px;
-    width: 86px;
-    font-size: 40px;
-    color: #ffffff;
-  }
-  
-  .input-santotal {
-    background-color:#101214;
-    border: solid var(--red) 2px;
-    height: 63px;
-    width: 86px;
-    font-size: 40px;
-    color: #ffffff;
-  }
-  
-  .input-sanatual {
-    background-color:#101214;
-    border: solid var(--red) 2px;
-    height: 63px;
-    width: 86px;
-    font-size: 40px;
-    color: #ffffff;
-  }
-  
-  .input-petotal {
-    background-color:#101214;
-    border: solid var(--red) 2px;
-    height: 63px;
-    width: 86px;
-    font-size: 40px;
-    color: #ffffff;
-  }
-  
-  .input-peatual {
-    background-color:#101214;
-    border: solid var(--red) 2px;
-    height: 63px;
-    width: 86px;
-    font-size: 40px;
-    color: #ffffff;
-  }
-  
-  /* FIM DOS INPUTS */
-  
-  /* CAIXAS DOS PODERES, ITENS, ETC. */
-  
-  .sub-info-2 {
-    justify-content: center;
+.perodada-pers {
+  /* display: flex; */
+  justify-content: start;
+  align-items: center;
+  padding: 10px;
+  width: 86px;
+}
 
-  }
+.desl-pers {
+  /* display: flex; */
+  justify-content: end;
+  align-items: center;
+  padding-left: 10px;
+  width: 86px;
+  margin-left: 50px;
+}
 
-  .itens-pers {
-    background-color:#101214;
-    border: solid var(--red) 2px;
-    height: 172px;
-    width: 1100px;
-    margin: 10px;
-  }
-  
-  .proef-pers {
-    background-color:#101214;
-    border: solid var(--red) 2px;
-    height: 121px;
-    width: 1100px;
-    margin: 10px;
-  }
-  
-  .habil-pers {
-    background-color:#101214;
-    border: solid var(--red) 2px;
-    height: 172px;
-    width: 1100px;
-    margin: 10px;
-  }
-  
-  /* FIM DAS CAIXAS */
-  
-  /* HEXÁGONOS */
-  
-  .hex1 {
-    padding: 10px;
-    height: 80px;
-  }
-  
-  .hex2 {
-    padding: 10px;
-    height: 80px;
-  }
-  
-  .hex3 {
-    padding: 10px;
-    height: 80px;
-    margin-top: -2px;
-  }
-  
-  .hex4 {
-    padding: 10px;
-    height: 80px;
-    margin-top: -50px;
-  }
-  
-  .hex5 {
-    padding: 10px;
-    height: 80px;
-    margin-top: -50px;
-  }
-  
-  .hex1-pers {
-    height: 60px;
-    width: 60px;
-    background-color: #101214;
-    clip-path: polygon(50% 0, 100% 24%, 100% 76%, 50% 100%, 0 76%, 0 24%);
-    border: solid #B04141;
-    border-radius: 25px;
-  }
-  
-  .hex2-pers {
-    height: 60px;
-    width: 60px;
-    background-color: #101214;
-    clip-path: polygon(50% 0, 100% 24%, 100% 76%, 50% 100%, 0 76%, 0 24%);
-    border: solid #B04141;
-    border-radius: 25px;
-  }
-  
-  .hex3-pers {
-    height: 60px;
-    width: 60px;
-    background-color: #101214;
-    clip-path: polygon(50% 0, 100% 24%, 100% 76%, 50% 100%, 0 76%, 0 24%);
-    border: solid #B04141;
-    border-radius: 25px;
-  }
-  
-  .hex4-pers {
-    height: 60px;
-    width: 60px;
-    background-color: #101214;
-    clip-path: polygon(50% 0, 100% 24%, 100% 76%, 50% 100%, 0 76%, 0 24%);
-    border: solid #B04141;
-    border-radius: 25px;
-  }
-  
-  .hex5-pers {
-    height: 60px;
-    width: 60px;
-    background-color: #101214;
-    clip-path: polygon(50% 0, 100% 24%, 100% 76%, 50% 100%, 0 76%, 0 24%);
-    border: solid #B04141;
-    border-radius: 25px;
-  }
-  
-  /* FIM DOS HEXÁGONOS */
-  
-  
-  
-  
-  
-  
-  .logo-ordem img {
-    width: 300px;
-  }
-  
-  .info-1 {
-    grid-area: info-1;
-  }
-  
-  .sub-info-1 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-      "foto-pers foto-pers"
-      "nex-pers perodada-pers"
-      "desl-pers quad-pers"
-      "pvtotal-pers pvatual-pers"
-      "santotal-pers sanatual-pers"
-      "petotal-pers peatual-pers";
-    width: 300px;
-  }
-  
-  .info-2 {
-    grid-area: info-2;
-    width: 1250px;
-  }
+.quad-pers {
+  /* display: flex; */
+  justify-content: start;
+  align-items: center;
+  padding-left: 10px;
+  width: 86px;
+}
 
-  .sub-info-2 {
-    display: grid;
-    grid-template-columns: repeat (4, 1fr);
-    grid-template-areas:
-      "nome-pers nome-pers classe-pers classe-pers"
-      "jogador-pers jogador-pers origem-pers origem-pers"
-      "itens-pers itens-pers itens-pers hex1-pers"
-      "itens-pers itens-pers itens-pers hex2-pers"
-      "proef-pers proef-pers proef-pers hex3-pers"
-      "habil-pers habil-pers habil-pers hex4-pers"
-      "habil-pers habil-pers habil-pers hex5-pers";
-    width: 1250px;
-    /* margin-left: 55px; */
-  }
+.pvtotal-pers {
+  /* display: flex; */
+  justify-content: end;
+  align-items: center;
+  padding: 10px;
+  width: 86px;
+  margin-left: 50px;
+}
 
-  .nome-pers, .classe-pers, .jogador-pers, .origem-pers {
-    padding-top: 20px;
-    width: 600px;
-    margin: 0px 10px 10px 10px;
-  }
-  
-  .nome-pers, .jogador-pers {
-    /* justify-content: start; */
-  }
+.pvatual-pers {
+  /* display: flex; */
+  justify-content: start;
+  align-items: center;
+  padding: 10px;
+  width: 86px;
+}
 
-  .classe-pers, .origem-pers {
-    /* justify-content: end; */
-  }
+.santotal-pers {
+  /* display: flex; */
+  justify-content: end;
+  align-items: center;
+  padding-left: 10px;
+  width: 86px;
+  margin-left: 50px;
+}
 
-  .info-3 {
-    grid-area: info-3;
-  }
-  
-  .sub-info-3 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "logo-ordem"
-      "pericias-pers";
-    width: 300px;
+.sanatual-pers {
+  /* display: flex; */
+  justify-content: start;
+  align-items: center;
+  padding-left: 10px;
+  width: 86px;
+}
 
-  }
-  
-  /* REFERENCIANDO GRID AREAS */
-  
-  .foto-pers {
-    grid-area: foto-pers;
-  }
-  
-  .nex-pers {
-    grid-area: nex-pers;
-  }
-  
-  .perodada-pers {
-    grid-area: perodada-pers;
-  }
-  
-  .desl-pers {
-    grid-area: desl-pers;
-  }
-  
-  .quad-pers {
-    grid-area: quad-pers;
-  }
-  
-  .pvtotal-pers {
-    grid-area: pvtotal-pers;
-  }
-  
-  .pvatual-pers {
-    grid-area: pvatual-pers;
-  }
-  
-  .santotal-pers {
-    grid-area: santotal-pers;
-  }
-  
-  .sanatual-pers {
-    grid-area: sanatual-pers;
-  }
-  
-  .petotal-pers {
-    grid-area: petotal-pers;
-  }
-  
-  .peatual-pers {
-    grid-area: peatual-pers;
-  }
-  
-  .nome-pers {
-    grid-area: nome-pers;
-  }
-  
-  .classe-pers {
-    grid-area: classe-pers;
-  }
-  
-  .jogador-pers {
-    grid-area: jogador-pers;
-  }
-  
-  .origem-pers {
-    grid-area: origem-pers;
-  }
-  
-  .itens-pers {
-    grid-area: itens-pers;
-  }
-  
-  .habil-pers {
-    grid-area: habil-pers;
-  }
-  
-  .proef-pers {
-    grid-area: proef-pers;
-  }
-  
-  .logo-ordem {
-    grid-area: logo-ordem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
-  }
-  
-  .pericias-pers {
-    grid-area: pericias-pers;
-  }
+.petotal-pers {
+  /* display: flex; */
+  justify-content: end;
+  align-items: center;
+  padding: 10px;
+  width: 86px;
+  margin-left: 50px;
+}
+
+.peatual-pers {
+  /* display: flex; */
+  justify-content: start;
+  align-items: center;
+  padding: 10px;
+  width: 86px;
+}
+
+.input-nex {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 63px;
+  width: 86px;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.input-perodada {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 63px;
+  width: 86px;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.input-deslocamento {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 63px;
+  width: 86px;
+  font-size: 40px;
+  color: #ffffff;
+}
+.input-quadrados {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 63px;
+  width: 86px;
+  font-size: 40px;
+  color: #ffffff;
+}
+.input-pvtotal {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 63px;
+  width: 86px;
+  font-size: 40px;
+  color: #ffffff;
+}
+.input-pvatual {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 63px;
+  width: 86px;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.input-santotal {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 63px;
+  width: 86px;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.input-sanatual {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 63px;
+  width: 86px;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.input-petotal {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 63px;
+  width: 86px;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.input-peatual {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 63px;
+  width: 86px;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+/* FIM DOS INPUTS */
+
+/* CAIXAS DOS PODERES, ITENS, ETC. */
+
+.sub-info-2 {
+  justify-content: center;
+}
+
+.itens-pers {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 172px;
+  width: 1100px;
+  margin: 10px;
+}
+
+.proef-pers {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 121px;
+  width: 1100px;
+  margin: 10px;
+}
+
+.habil-pers {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 172px;
+  width: 1100px;
+  margin: 10px;
+}
+
+/* FIM DAS CAIXAS */
+
+/* HEXÁGONOS */
+
+.hex1 {
+  padding: 10px;
+  height: 80px;
+}
+
+.hex2 {
+  padding: 10px;
+  height: 80px;
+}
+
+.hex3 {
+  padding: 10px;
+  height: 80px;
+  margin-top: -2px;
+}
+
+.hex4 {
+  padding: 10px;
+  height: 80px;
+  margin-top: -50px;
+}
+
+.hex5 {
+  padding: 10px;
+  height: 80px;
+  margin-top: -50px;
+}
+
+.hex1-pers {
+  height: 60px;
+  width: 60px;
+  background-color: #101214;
+  clip-path: polygon(50% 0, 100% 24%, 100% 76%, 50% 100%, 0 76%, 0 24%);
+  border: solid #b04141;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hex2-pers {
+  height: 60px;
+  width: 60px;
+  background-color: #101214;
+  clip-path: polygon(50% 0, 100% 24%, 100% 76%, 50% 100%, 0 76%, 0 24%);
+  border: solid #b04141;
+  border-radius: 25px;
+}
+
+.hex3-pers {
+  height: 60px;
+  width: 60px;
+  background-color: #101214;
+  clip-path: polygon(50% 0, 100% 24%, 100% 76%, 50% 100%, 0 76%, 0 24%);
+  border: solid #b04141;
+  border-radius: 25px;
+}
+
+.hex4-pers {
+  height: 60px;
+  width: 60px;
+  background-color: #101214;
+  clip-path: polygon(50% 0, 100% 24%, 100% 76%, 50% 100%, 0 76%, 0 24%);
+  border: solid #b04141;
+  border-radius: 25px;
+}
+
+.hex5-pers {
+  height: 60px;
+  width: 60px;
+  background-color: #101214;
+  clip-path: polygon(50% 0, 100% 24%, 100% 76%, 50% 100%, 0 76%, 0 24%);
+  border: solid #b04141;
+  border-radius: 25px;
+}
+
+.hex1-pers input {
+  border: none;
+  /* background: none; */
+}
+/* FIM DOS HEXÁGONOS */
+
+.logo-ordem img {
+  width: 300px;
+}
+
+.info-1 {
+  grid-area: info-1;
+}
+
+.sub-info-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "foto-pers foto-pers"
+    "nex-pers perodada-pers"
+    "desl-pers quad-pers"
+    "pvtotal-pers pvatual-pers"
+    "santotal-pers sanatual-pers"
+    "petotal-pers peatual-pers";
+  width: 300px;
+}
+
+.info-2 {
+  grid-area: info-2;
+  width: 1250px;
+}
+
+.sub-info-2 {
+  display: grid;
+  grid-template-columns: repeat (4, 1fr);
+  grid-template-areas:
+    "nome-pers nome-pers classe-pers classe-pers"
+    "jogador-pers jogador-pers origem-pers origem-pers"
+    "itens-pers itens-pers itens-pers hex1-pers"
+    "itens-pers itens-pers itens-pers hex2-pers"
+    "proef-pers proef-pers proef-pers hex3-pers"
+    "habil-pers habil-pers habil-pers hex4-pers"
+    "habil-pers habil-pers habil-pers hex5-pers";
+  width: 1250px;
+  /* margin-left: 55px; */
+}
+
+.nome-pers,
+.classe-pers,
+.jogador-pers,
+.origem-pers {
+  padding-top: 20px;
+  width: 600px;
+  margin: 0px 10px 10px 10px;
+}
+
+.nome-pers,
+.jogador-pers {
+  /* justify-content: start; */
+}
+
+.classe-pers,
+.origem-pers {
+  /* justify-content: end; */
+}
+
+.info-3 {
+  grid-area: info-3;
+}
+
+.sub-info-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "logo-ordem"
+    "pericias-pers";
+  width: 300px;
+}
+
+/* REFERENCIANDO GRID AREAS */
+
+.foto-pers {
+  grid-area: foto-pers;
+}
+
+.nex-pers {
+  grid-area: nex-pers;
+}
+
+.perodada-pers {
+  grid-area: perodada-pers;
+}
+
+.desl-pers {
+  grid-area: desl-pers;
+}
+
+.quad-pers {
+  grid-area: quad-pers;
+}
+
+.pvtotal-pers {
+  grid-area: pvtotal-pers;
+}
+
+.pvatual-pers {
+  grid-area: pvatual-pers;
+}
+
+.santotal-pers {
+  grid-area: santotal-pers;
+}
+
+.sanatual-pers {
+  grid-area: sanatual-pers;
+}
+
+.petotal-pers {
+  grid-area: petotal-pers;
+}
+
+.peatual-pers {
+  grid-area: peatual-pers;
+}
+
+.nome-pers {
+  grid-area: nome-pers;
+}
+
+.classe-pers {
+  grid-area: classe-pers;
+}
+
+.jogador-pers {
+  grid-area: jogador-pers;
+}
+
+.origem-pers {
+  grid-area: origem-pers;
+}
+
+.itens-pers {
+  grid-area: itens-pers;
+}
+
+.habil-pers {
+  grid-area: habil-pers;
+}
+
+.proef-pers {
+  grid-area: proef-pers;
+}
+
+.logo-ordem {
+  grid-area: logo-ordem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.pericias-pers {
+  grid-area: pericias-pers;
+}
