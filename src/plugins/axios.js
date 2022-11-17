@@ -1,3 +1,5 @@
 import axios from "axios";
 
-axios.defaults.baseURL = "https://orchidproject.herokuapp.com"
+export default axios.create({
+    baseURL: "https://orchidproject.up.railway.app/",
+});

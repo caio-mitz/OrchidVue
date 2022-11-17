@@ -6,7 +6,7 @@ import { auth } from './auth'
 
 Vue.use(Vuex)
 
-const vuexLocal = new VuexPersistence ({
+const vuexLocal = new VuexPersistence({
     storage: window.localStorage,
     key: 'orchid-vue-django'
 })
@@ -15,7 +15,7 @@ const modules = {
     auth
 }
 
-export default new Vuex.Store ({
+export default new Vuex.Store({
     modules,
     plugins: [vuexLocal.plugin]
 })

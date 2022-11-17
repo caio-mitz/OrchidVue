@@ -17,7 +17,7 @@ const routes = [
     component: () => import("@/layouts/DefaultOrchid.vue"),
     children: [
       {
-        name: HomeOrchid,
+        name: "HomeOrchid",
         path: "/",
         component: HomeOrchid,
       },
@@ -33,7 +33,7 @@ const routes = [
       {
         path: '/contato',
         component: ContatoOrchid
-      },    
+      },
     ],
   },
   {
@@ -44,7 +44,7 @@ const routes = [
       {
         path: '/login',
         component: LoginOrchid,
-        
+
       },
       {
         path: '/cadastro',
