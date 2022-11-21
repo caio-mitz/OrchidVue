@@ -27,7 +27,7 @@
   display: grid;
   grid-template-columns: 1fr, 2fr, 1fr;
   grid-template-areas: "info-1 info-2 info-2 info-3";
-  height: 1160px;
+  height: 1040px;
 }
 
 /* FIM DA CONFIGURAÇÃO DA PÁGINA DA FICHA */
@@ -98,7 +98,7 @@
 .sanatual-pers h1,
 .petotal-pers h1,
 .peatual-pers h1 {
-  padding-top: 10px;
+  padding-top: 60.5px;
   font-size: 10px;
 }
 
@@ -295,27 +295,62 @@
 .itens-pers {
   background-color: #101214;
   border: solid var(--red) 2px;
-  height: 172px;
+  height: 200px;
   width: 1100px;
-  margin: 10px;
+  margin: 50px 10px 10px 10px;
+}
+
+.input-itens {
+  width: 1098px;
+  height: 160px;
+  border: solid 2px #b04141;
+  background: none;
+  color: white;
+  font-size: 20px;
 }
 
 .proef-pers {
   background-color: #101214;
   border: solid var(--red) 2px;
-  height: 121px;
+  height: 100px;
   width: 1100px;
-  margin: 10px;
+  margin: 50px 10px 10px 10px;
+}
+
+.input-proef {
+  width: 1098px;
+  height: 60px;
+  border: solid 2px #b04141;
+  background: none;
+  color: white;
+  font-size: 20px;
 }
 
 .habil-pers {
   background-color: #101214;
   border: solid var(--red) 2px;
-  height: 172px;
+  height: 295px;
   width: 1100px;
-  margin: 10px;
+  margin: 50px 10px 10px 10px;
 }
 
+.input-habil {
+  width: 1098px;
+  height: 255px;
+  border: solid 2px #b04141;
+  background: none;
+  color: white;
+  font-size: 20px;  
+}
+
+.tit-caixas {
+  background-color: #0c0e10;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  color: #b04141;
+  border: solid #b04141 2px;
+}
 /* FIM DAS CAIXAS */
 
 /* HEXÁGONOS */
@@ -451,10 +486,10 @@
 }
 /* FIM DOS HEXÁGONOS */
 
-.logo-ordem img {
+/* .logo-ordem img {
   width: 300px;
   margin-top: -40px;
-}
+} */
 
 .info-1 {
   grid-area: info-1;
@@ -614,7 +649,7 @@
 /* TABELA DE PERÍCIAS */
 
 .tabela {
-  margin-top: 20px;
+  margin-top: 43px;
   background-color: #101214;
   border: 2px solid #b04141;
 }
@@ -687,11 +722,10 @@
 
 .lista-agilidade ul {
   list-style: none;
-  height: 180px;
   padding: 10px 0px 0px 10px;
 }
 
-.lista-agilidade li {
+.lista-agilidade .ul-1 li {
   height: 25px;
 }
 
@@ -701,17 +735,17 @@
   padding: 10px 0px 0px 10px;
 }
 
-.lista-inteligencia li {
+.lista-inteligencia .ul-1 li {
   height: 25px;
 }
 
 .lista-forca ul {
   list-style: none;
-  height: 50px;
+  /* height: 50px; */
   padding: 10px 0px 0px 10px;
 }
 
-.lista-forca li {
+.lista-forca .ul-1 li {
   height: 25px;
 }
 
@@ -721,7 +755,7 @@
   padding: 10px 0px 0px 10px;
 }
 
-.lista-presenca li {
+.lista-presenca .ul-1 li {
   height: 25px;
 }
 
@@ -731,7 +765,187 @@
   padding: 10px 0px 0px 10px;
 }
 
-.lista-vigor li {
+.lista-vigor .ul-1 li {
   height: 25px;
 }
 /* FIM DA TABELA DE PERÍCIAS */
+
+.quadrados {
+  background-color: #0c0e10;
+  width: 40px;
+  height: 10px;
+  border: solid;
+}
+
+.lista-agilidade {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-areas:
+  'a1 q1'
+  'a2 q2'
+  'a3 q3'
+  'a4 q4'
+  'a5 q5'
+  'a6 q6'
+  'a7 q7';
+}
+
+.lista-forca {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-areas:
+  'a1 q1'
+  'a2 q2'
+}
+
+.lista-inteligencia {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-areas:
+  'a1 q1'
+  'a2 q2'
+  'a3 q3'
+  'a4 q4'
+  'a5 q5'
+  'a6 q6'
+  'a7 q7'
+  'a8 q8'
+  'a9 q9'
+  'a10 q10';
+}
+
+.lista-presenca {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-areas:
+  'a1 q1'
+  'a2 q2'
+  'a3 q3'
+  'a4 q4'
+  'a5 q5'
+  'a6 q6'
+  'a7 q7'
+  'a8 q8';
+}
+
+.lista-vigor {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-areas:
+  'a1 q1';
+}
+
+.q1, .q2, .q3, .q4, .q5, .q6, .q7, .q8, .q9, .q10 {
+  width: 50px;
+  height: 20px;
+  display: flex;
+  margin-left: 70px;
+}
+
+.a1 {
+  grid-area: a1;
+}
+
+.a2 {
+  grid-area: a2;
+}
+
+.a3 {
+  grid-area: a3;
+}
+
+.a4 {
+  grid-area: a4;
+}
+
+.a5 {
+  grid-area: a5;
+}
+
+.a6 {
+  grid-area: a6;
+}
+
+.a7 {
+  grid-area: a7;
+}
+
+.a8 {
+  grid-area: a8;
+}
+
+.a9 {
+  grid-area: a9;
+}
+
+.a10 {
+  grid-area: a10;
+}
+
+
+.q1 {
+  grid-area: q1;
+  background-color: #0c0e10;
+  border: solid 2px #b04141;
+}
+
+.q2 {
+  grid-area: q2;
+  background-color: #0c0e10;
+  border: solid 2px #b04141;
+}
+
+.q3 {
+  grid-area: q3;
+  background-color: #0c0e10;
+  border: solid 2px #b04141;
+}
+
+.q4 {
+  grid-area: q4;
+  background-color: #0c0e10;
+  border: solid 2px #b04141;
+}
+
+.q5 {
+  grid-area: q5;
+  background-color: #0c0e10;
+  border: solid 2px #b04141;
+}
+
+.q6 {
+  grid-area: q6;
+  background-color: #0c0e10;
+  border: solid 2px #b04141;
+}
+
+.q7 {
+  grid-area: q7;
+  background-color: #0c0e10;
+  border: solid 2px #b04141;
+}
+
+.q8 {
+  grid-area: q8;
+  background-color: #0c0e10;
+  border: solid 2px #b04141;
+}
+
+.q9 {
+  grid-area: q9;
+  background-color: #0c0e10;
+  border: solid 2px #b04141;
+}
+
+.q10 {
+  grid-area: q10;
+  background-color: #0c0e10;
+  border: solid 2px #b04141;
+}
+
+.input-q {
+  width: 45px;
+  background: none;
+  border: none;
+  color: #ffffff;
+}

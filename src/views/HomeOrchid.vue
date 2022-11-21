@@ -12,7 +12,7 @@
                         </p>
                         <div to="/cadastro" @click="mostrarmodal = true" class="btn" id="abrir-cadastro">Criar conta
                         </div>
-                        <a href="#" class="btn-two">Criar personagem</a>
+                        <router-link to="/ficha" class="btn-two">Criar personagem</router-link>
                         <router-link to="/equipes" class="btn-two">Equipes</router-link>
                     </header>
                 </div>
