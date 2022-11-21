@@ -27,7 +27,7 @@
   display: grid;
   grid-template-columns: 1fr, 2fr, 1fr;
   grid-template-areas: "info-1 info-2 info-2 info-3";
-  height: 800px;
+  height: 1160px;
 }
 
 /* FIM DA CONFIGURAÇÃO DA PÁGINA DA FICHA */
@@ -194,6 +194,7 @@
   width: 86px;
   font-size: 40px;
   color: #ffffff;
+  text-align: center;
 }
 
 .input-perodada {
@@ -203,6 +204,7 @@
   width: 86px;
   font-size: 40px;
   color: #ffffff;
+  text-align: center;
 }
 
 .input-deslocamento {
@@ -212,6 +214,7 @@
   width: 86px;
   font-size: 40px;
   color: #ffffff;
+  text-align: center;
 }
 .input-quadrados {
   background-color: #101214;
@@ -220,6 +223,7 @@
   width: 86px;
   font-size: 40px;
   color: #ffffff;
+  text-align: center;
 }
 .input-pvtotal {
   background-color: #101214;
@@ -228,6 +232,7 @@
   width: 86px;
   font-size: 40px;
   color: #ffffff;
+  text-align: center;
 }
 .input-pvatual {
   background-color: #101214;
@@ -236,6 +241,7 @@
   width: 86px;
   font-size: 40px;
   color: #ffffff;
+  text-align: center;
 }
 
 .input-santotal {
@@ -245,6 +251,7 @@
   width: 86px;
   font-size: 40px;
   color: #ffffff;
+  text-align: center;
 }
 
 .input-sanatual {
@@ -254,6 +261,7 @@
   width: 86px;
   font-size: 40px;
   color: #ffffff;
+  text-align: center;
 }
 
 .input-petotal {
@@ -263,6 +271,7 @@
   width: 86px;
   font-size: 40px;
   color: #ffffff;
+  text-align: center;
 }
 
 .input-peatual {
@@ -272,6 +281,7 @@
   width: 86px;
   font-size: 40px;
   color: #ffffff;
+  text-align: center;
 }
 
 /* FIM DOS INPUTS */
@@ -388,12 +398,62 @@
 
 .hex1-pers input {
   border: none;
-  /* background: none; */
+  color: white;
+  background: none;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.hex2-pers input {
+  border: none;
+  color: white;
+  background: none;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  text-align: center;
+  margin: 5px 0px 0px 5px;
+}
+
+.hex3-pers input {
+  border: none;
+  color: white;
+  background: none;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  text-align: center;
+  margin: 5px 0px 0px 5px;
+}
+
+.hex4-pers input {
+  border: none;
+  color: white;
+  background: none;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  text-align: center;
+  margin: 5px 0px 0px 5px;
+}
+
+.hex5-pers input {
+  border: none;
+  color: white;
+  background: none;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  text-align: center;
+  margin: 5px 0px 0px 5px;
 }
 /* FIM DOS HEXÁGONOS */
 
 .logo-ordem img {
   width: 300px;
+  margin-top: -40px;
 }
 
 .info-1 {
@@ -550,3 +610,128 @@
 .pericias-pers {
   grid-area: pericias-pers;
 }
+
+/* TABELA DE PERÍCIAS */
+
+.tabela {
+  margin-top: 20px;
+  background-color: #101214;
+  border: 2px solid #b04141;
+}
+
+.tit-pericia {
+  background: #0c0e10;
+  color: #b04141;
+  border: 2px solid #b04141;
+  height: 40px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tit-agilidade {
+  background: #0c0e10;
+  color: #b04141;
+  border: 2px solid #b04141;
+  height: 30px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.tit-inteligencia {
+  background: #0c0e10;
+  color: #b04141;
+  border: 2px solid #b04141;
+  height: 30px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.tit-forca {
+  background: #0c0e10;
+  color: #b04141;
+  border: 2px solid #b04141;
+  height: 30px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.tit-presenca {
+  background: #0c0e10;
+  color: #b04141;
+  border: 2px solid #b04141;
+  height: 30px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.tit-vigor h1 {
+  background: #0c0e10;
+  color: #b04141;
+  border: 2px solid #b04141;
+  height: 30px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.lista-agilidade ul {
+  list-style: none;
+  height: 180px;
+  padding: 10px 0px 0px 10px;
+}
+
+.lista-agilidade li {
+  height: 25px;
+}
+
+.lista-inteligencia ul {
+  list-style: none;
+  height: 250px;
+  padding: 10px 0px 0px 10px;
+}
+
+.lista-inteligencia li {
+  height: 25px;
+}
+
+.lista-forca ul {
+  list-style: none;
+  height: 50px;
+  padding: 10px 0px 0px 10px;
+}
+
+.lista-forca li {
+  height: 25px;
+}
+
+.lista-presenca ul {
+  list-style: none;
+  height: 200px;
+  padding: 10px 0px 0px 10px;
+}
+
+.lista-presenca li {
+  height: 25px;
+}
+
+.lista-vigor ul {
+  list-style: none;
+  height: 25px;
+  padding: 10px 0px 0px 10px;
+}
+
+.lista-vigor li {
+  height: 25px;
+}
+/* FIM DA TABELA DE PERÍCIAS */

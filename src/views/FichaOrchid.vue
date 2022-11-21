@@ -147,7 +147,74 @@
           <img src="@/assets/Ordem_Paranormal_Logo.png" alt="" />
         </div>
         <div class="pericias-pers">
-          <!-- PERICIAS -->
+          <div class="tabela">
+            <div class="tit-pericia">
+              <h1>PERÍCIAS</h1>
+            </div>
+            <div class="tit-agilidade">
+              <h1>AGILIDADE:</h1>
+            </div>
+            <div class="lista-agilidade">
+              <ul>
+                <li>ACROBACIA</li>
+                <li>CRIME</li>
+                <li>FURTIVIDADE</li>
+                <li>INICIATIVA</li>
+                <li>PILOTAGEM</li>
+                <li>PONTARIA</li>
+                <li>REFLEXOS</li>
+              </ul>
+            </div>
+            <div class="tit-forca">
+              <h1>FORÇA:</h1>
+            </div>
+            <div class="lista-forca">
+              <ul>
+                <li>ATLETISMO</li>
+                <li>LUTA</li>
+              </ul>
+            </div>
+            <div class="tit-inteligencia">
+              <h1>INTELIGÊNCIA:</h1>
+            </div>
+            <div class="lista-inteligencia">
+              <ul>
+                <li>ATUALIDADES</li>
+                <li>CIÊNCIAS</li>
+                <li>INTUIÇÃO</li>
+                <li>INVESTIGAÇÃO</li>
+                <li>MEDICINA</li>
+                <li>OCULTISMO</li>
+                <li>PROFISSÃO</li>
+                <li>SOBREVIVÊNCIA</li>
+                <li>TÁTICA</li>
+                <li>TECNOLOGIA</li>
+              </ul>
+            </div>
+            <div class="tit-presenca">
+              <h1>PRESENÇA:</h1>
+            </div>
+            <div class="lista-presenca">
+              <ul>
+                <li>ADESTRAMENTO</li>
+                <li>ARTES</li>
+                <li>DIPLOMACIA</li>
+                <li>ENGANAÇÃO</li>
+                <li>INTIMIDAÇÃO</li>
+                <li>PERCEPÇÃO</li>
+                <li>RELIGIÃO</li>
+                <li>VONTADE</li>
+              </ul>
+            </div>
+            <div class="tit-vigor">
+              <h1>VIGOR:</h1>
+            </div>
+            <div class="lista-vigor">
+              <ul>
+                <li>FORTITUDE</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     </section>
