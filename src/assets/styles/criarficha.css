@@ -11,8 +11,73 @@
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
     color: #ffffff;
     background: linear-gradient(#0c0e10, #24282e);
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "col1 col2 col3 col4";
     height: 1040px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+  'area1'
+  'area2';
+  border: solid 2px var(--red);
+  height: 500px;
+  width: 500px;
+}
+
+.area1 {
+  display: grid;
+  grid-area: area1;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+  'inputnome inputnome inputnex'
+  'inputorigem inputorigem inputorigem'
+  'inputclasse inputclasse inputclasse';
+}
+
+.inputnome {
+  display: grid;
+  grid-area: inputnome;
+}
+
+.inputnex {
+  display: grid;
+  grid-area: inputnex;
+}
+
+.inputorigem {
+  display: grid;
+  grid-area: inputorigem;
+}
+
+.inputclasse {
+  display: grid;
+  grid-area: inputclasse;
+}
+
+.area2 {
+  display: grid;
+  grid-area: area2;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas:
+  'inputagili inputforca inputintel inputprese inputvigor'
+  'fieldpericias fieldpericias fieldpericias fieldpericias fieldpericias'
+  'criarficha criarficha criarficha criarficha criarficha';
+}
+
+.criarficha {
+  background-color: var(--red);
+  color: var(--light);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  border: 2px;
+  width: 383px;
+  height: 40px;
 }
