@@ -49,14 +49,7 @@
                 <div class="top-box top-box-b">
                     <h1>ORDEM PARANORMAL RPG</h1>
                     <p>
-                        Nibh ipsum consequat nisl vel pretium lectus quam. Sed egestas
-                        egestas fringilla phasellus faucibus scelerisque eleifend donec
-                        pretium. Risus sed vulputate odio ut enim blandit volutpat maecenas
-                        volutpat. Nunc sed augue lacus viverra vitae congue eu consequat ac.
-                        Non tellus orci ac auctor. Ante in nibh mauris cursus mattis.
-                        Facilisi etiam dignissim diam quis enim lobortis scelerisque. Id
-                        aliquet lectus proin nibh nisl. Elit eget gravida cum sociis natoque
-                        penatibus. Eu scelerisque felis imperdiet proin fermentum leo vel.
+                        Ordem Paranormal é um universo de investigação paranormal criado pelo streamer Rafael Lange (Cellbit). Esse universo deu origem ao RPG Ordem Paranormal, um RPG transmitido por meio de serviços de streaming para milhares de telespectadores que assistiram as aventuras dos jogadores. O Ordem Paranormal é mestrado pelo Cellbit e conta com outros streamers em seu elenco. 
                     </p>
                 </div>
             </section>

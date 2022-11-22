@@ -1,0 +1,18 @@
+:root {
+    --primary: #24282e;
+    --secondary: #0c0e10;
+    --light: #ffffff;
+    --red: #b04141;
+    --dark: #101214;
+    --shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
+  }
+
+.criar-ficha {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    background: linear-gradient(#0c0e10, #24282e);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "col1 col2 col3 col4";
+    height: 1040px;
+}

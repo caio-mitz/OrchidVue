@@ -42,13 +42,6 @@
     border: solid 2px var(--red);
 }
 
-.det1 {
-    grid-area: det1;
-}
-
-.det2 {
-    grid-area: det2;
-}
 
 .foto1 {
     grid-area: foto1;
@@ -68,12 +61,45 @@
     align-items: center;
 }
 
-.cont-2 {
+.desc1 {
     color: #ffffff;
     background: #0c0e10;
     display: grid;
+    grid-template-rows: 3fr;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "det1 det2";
+    grid-template-areas: 
+    "titulo titulo"
+    "det1 det2"
+    "det1 det2";
+    padding: 30px 20px 20px 0px;
+}
+
+.titulo {
+    display: grid;
+    grid-area: titulo;
+    font-size: 15px;
+    padding: 0px 0px 30px 0px;
+}
+
+.det1 {
+    display: grid;
+    grid-area: det1;
+}
+
+.det2 {
+    display: grid;
+    grid-area: det2;
+}
+
+.detnum {
+    font-size: 15px;
+    display: flex;
+    justify-content: right;
+}
+
+.det-nex-classe {
+    font-size: 15px;
+    padding: 0px 0px 30px 0px;
 }
 
 .foto1 {
