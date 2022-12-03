@@ -38,23 +38,23 @@
                         <!-- INPUTS -->
                         <section class="showcase-cadastro-3">
                             <div class="top-box top-box-a-cadastro">
-                                <input type="text" placeholder="Nome" name="nome" class="input-register">
+                                <input style="color:white;" type="text" placeholder="Nome" name="nome" class="input-register">
                             </div>
 
                             <div class="top-box top-box-b-cadastro">
-                                <input type="text" placeholder="Sobrenome" name="sobrenome" class="input-register">
+                                <input style="color:white;" type="text" placeholder="Sobrenome" name="sobrenome" class="input-register">
                             </div>
                         </section>
 
                         <section class="showcase-cadastro-4">
                             <div class="top-box top-box-a-cadastro">
-                                <input type="text" placeholder="Nome de usuário" name="username" class="input-register">
+                                <input style="color:white;" type="text" placeholder="Nome de usuário" name="username" class="input-register">
                             </div>
                         </section>
 
                         <section class="showcase-cadastro-5">
                             <div class="top-box top-box-a-cadastro">
-                                <input type="text" placeholder="Endereço de e-mail" name="email" class="input-register">
+                                <input style="color:white;" type="email" placeholder="Endereço de e-mail" name="email" class="input-register">
                             </div>
                         </section>
 
@@ -84,6 +84,7 @@
 
 <script>
 export default {
+
     props: ['mostrarmodal'],
     mounted() {
         let dom = document.querySelector('html')
