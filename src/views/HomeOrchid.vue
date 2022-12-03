@@ -1,26 +1,58 @@
 <template>
-  <div class="homeorchid">
-    <PopUp :mostrarmodal="mostrarmodal" @fecharmodal="mostrarmodal = false" />
-    <div class="tudo-1">
-      <section class="info">
-        <div class="bgordem">
-          <header class="showcase">
-            <h1>A ORDEM TE ESPERA</h1>
-            <p>
-              Crie sua ficha de Ordem Paranormal, junte-se com seus amigos e
-              divirta-se! Nossa única intenção é o seu entretenimento.
-            </p>
-            <div
-              to="/cadastro"
-              @click="mostrarmodal = true"
-              class="btn"
-              id="abrir-cadastro"
-            >
-              Criar conta
-            </div>
-            <a href="#" class="btn-two">Criar personagem</a>
-            <router-link to="/equipes" class="btn-two">Equipes</router-link>
-          </header>
+    <div class="homeorchid">
+        <PopUp :mostrarmodal="mostrarmodal" @fecharmodal='mostrarmodal=false' />
+        <div class='tudo-1'>
+            <section class="info">
+                <div class="bgordem">
+                    <header class="showcase">
+                        <h1>A ORDEM TE ESPERA</h1>
+                        <p>
+                            Crie sua ficha de Ordem Paranormal, junte-se com seus amigos e divirta-se! Nossa única
+                            intenção é o seu entretenimento.
+                        </p>
+                        <div to="/cadastro" @click="mostrarmodal = true" class="btn" id="abrir-cadastro">Criar conta
+                        </div>
+                        <router-link to="/ficha" class="btn-two">Criar personagem</router-link>
+                        <router-link to="/equipes" class="btn-two">Equipes</router-link>
+                    </header>
+                </div>
+            </section>
+            <!-- FINAL IMAGEM DO ORDEM -->
+            <hr class="linecut" color="#B04141" />
+            <!-- TEXTOS E IMAGENS -->
+            <section class="inforpg">
+                <div class="top-box top-box-a">
+                    <h1>AFINAL, O QUE É RPG?</h1>
+                    <p>
+                        RPG é a sigla para Role Playing Game que significa jogo de
+                        interpretação de papéis ou personagens. Nesse gênero de jogo os
+                        jogadores interpretam personagens imaginários em um universo
+                        fictício, a história desses personagens é guiada ao longo das
+                        sessões de RPG por um jogador denominado “mestre”. O mestre dita a
+                        trama, controla os inimigos enfrentados pelos personagens dos outros
+                        jogadores e interpreta os NPCs.
+                    </p>
+                </div>
+                <br />
+
+                <br />
+                <div class="top-box top-box-b">
+                    <img src="@/assets/rpgdemesa.png" alt="" />
+                </div>
+            </section>
+            <hr class="linecut" color="#B04141" />
+            <section class="inforpg-2">
+                <div class="top-box top-box-a">
+                    <img src="@/assets/ordem2.jpeg" alt="" />
+                </div>
+
+                <div class="top-box top-box-b">
+                    <h1>ORDEM PARANORMAL RPG</h1>
+                    <p>
+                        Ordem Paranormal é um universo de investigação paranormal criado pelo streamer Rafael Lange (Cellbit). Esse universo deu origem ao RPG Ordem Paranormal, um RPG transmitido por meio de serviços de streaming para milhares de telespectadores que assistiram as aventuras dos jogadores. O Ordem Paranormal é mestrado pelo Cellbit e conta com outros streamers em seu elenco. 
+                    </p>
+                </div>
+            </section>
         </div>
       </section>
       <!-- FINAL IMAGEM DO ORDEM -->
@@ -93,7 +125,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .tudo-1 {
   background: linear-gradient(#0c0e10, #24282e);
   color: #fff;
@@ -278,15 +310,15 @@ h1 {
 }
 
 .btn-two {
-  background-color: rgba(12, 14, 16, 0.5);
-  color: #fff;
-  padding: 0.6rem 1.3rem;
-  text-decoration: none;
-  border: solid;
-  border-color: #b04141;
-  border-width: 1px;
-  width: 200px;
-  cursor: pointer;
+    background-color: rgba(12, 14, 16, .5);
+    color: #fff;
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: solid;
+    border-color: #B04141;
+    border-width: 1px;
+    width: 200px;
+    cursor: pointer;
 }
 
 .logo img {

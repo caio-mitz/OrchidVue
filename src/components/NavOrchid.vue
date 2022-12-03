@@ -1,50 +1,38 @@
 <template>
-  <div>
-    <div class="tudo">
-      <header class="top-header">
-        <nav class="main-nav">
-          <ul>
-            <div class="junta">
-              <section class="logo">
-                <li>
-                  <router-link to="/"
-                    ><img src="@/assets/logo-orchid.png" alt=""
-                  /></router-link>
-                </li>
-              </section>
-              <section class="main-left">
-                <li>
-                  <a class="link" href="#">Fichas</a>
-                  <linha>|</linha>
-                  <router-link class="link" to="/equipes">Equipes</router-link>
-                </li>
-              </section>
-            </div>
-            <section class="main-right">
-              <li class="botaologin" v-if="!loggedIn">
-                <div
-                  class="link"
-                  @click="mostrarmodalLogin = true"
-                  id="abrir-login1"
-                >
-                  Login
-                </div>
-                <linha>|</linha>
-                <div
-                  class="link createacc"
-                  @click="mostrarmodal = true"
-                  id="abrir-cadastro1"
-                >
-                  Criar conta
-                </div>
-              </li>
-              <li v-else class="botaologin" style="color: white">
-                Olá, {nomedeUsuario}
-              </li>
-            </section>
-          </ul>
-        </nav>
-      </header>
+    <div>
+
+        <div class="tudo">
+            <header class="top-header">
+                <nav class="main-nav">
+                    <ul>
+                        <div class="junta">
+                            <section class="logo">
+                                <li>
+                                    <router-link to="/"><img src="@/assets/logo-orchid.png" alt="" /></router-link>
+                                </li>
+                            </section>
+                            <section class="main-left">
+
+                                <li><router-link class="link" to="/minhasfichas">Minhas fichas</router-link>
+                                    <linha>|</linha>
+                                    <router-link class="link" to="/equipes">Equipes</router-link>
+                                </li>
+                            </section>
+                        </div>
+                        <section class="main-right">
+                            <li class="botaologin">
+                                <div class="link" @click="mostrarmodalLogin = true" id="abrir-login1">Login</div>
+                                <linha>|</linha>
+                                <div class="link createacc" @click="mostrarmodal = true" id="abrir-cadastro1">Criar
+                                    conta</div>
+                            </li>
+                        </section>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <PopUp :mostrarmodal="mostrarmodal" @fecharmodal='mostrarmodal=false' />
+        <PopUpLogin :mostrarmodalLogin="mostrarmodalLogin" @fecharmodal='mostrarmodalLogin=false' />
     </div>
     <PopUp :mostrarmodal="mostrarmodal" @fecharmodal="mostrarmodal = false" />
     <PopUpLogin

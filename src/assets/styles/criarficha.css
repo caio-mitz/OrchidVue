@@ -1,0 +1,191 @@
+:root {
+    --primary: #24282e;
+    --secondary: #0c0e10;
+    --light: #ffffff;
+    --red: #b04141;
+    --dark: #101214;
+    --shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
+  }
+
+.criar-ficha {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    background: linear-gradient(#0c0e10, #24282e);
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+  'area1'
+  'area2';
+  border: solid 2px var(--red);
+  /* height: auto;
+  width: auto; */
+  padding: 20px 20px 0px 20px;
+  width: 1000px;
+}
+
+.area1 {
+  display: grid;
+  grid-area: area1;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+  'inputnome inputnome inputnex'
+  'inputorigem inputorigem inputorigem'
+  'inputclasse inputclasse inputclasse';
+}
+
+.inputnome {
+  display: grid;
+  grid-area: inputnome;
+  margin: 5px;
+  border: solid 1px var(--red);
+  background-color: var(--primary);
+  color: white;
+  font-size: 30px;
+}
+
+.inputnex {
+  display: grid;
+  grid-area: inputnex;
+  margin: 5px;
+  border: solid 1px var(--red);
+  background-color: var(--primary);
+  color: white;
+  font-size: 30px;
+}
+
+.inputorigem {
+  display: grid;
+  grid-area: inputorigem;
+  margin: 5px;
+  border: solid 1px var(--red);
+  background-color: var(--primary);
+  color: white;
+  font-size: 30px;
+}
+
+.inputclasse {
+  display: grid;
+  grid-area: inputclasse;
+  margin: 5px;
+  border: solid 1px var(--red);
+  background-color: var(--primary);
+  color: white;
+  font-size: 30px;
+}
+
+.area2 {
+  display: grid;
+  grid-area: area2;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas:
+  'inputagili inputforca inputintel inputprese inputvigor'
+  'fieldagili fieldforca fieldintel fieldprese fieldvigor'
+  'criarficha criarficha criarficha criarficha criarficha';
+  height: 300px;
+}
+
+.inputagili {
+  display: grid;
+  grid-area: inputagili;
+  margin: 5px;
+  border: solid 1px var(--red);
+  background-color: var(--primary);
+  color: white;
+  font-size: 30px;
+}
+
+.inputforca {
+  display: grid;
+  grid-area: inputforca;
+  margin: 5px;
+  border: solid 1px var(--red);
+  background-color: var(--primary);
+  color: white;
+  font-size: 30px;
+}
+
+.inputintel {
+  display: grid;
+  grid-area: inputintel;
+  margin: 5px;
+  border: solid 1px var(--red);
+  background-color: var(--primary);
+  color: white;
+  font-size: 30px;
+}
+
+.inputprese {
+  display: grid;
+  grid-area: inputprese;
+  margin: 5px;
+  border: solid 1px var(--red);
+  background-color: var(--primary);
+  color: white;
+  font-size: 30px;
+}
+
+.inputvigor {
+  display: grid;
+  grid-area: inputvigor;
+  margin: 5px;
+  border: solid 1px var(--red);
+  background-color: var(--primary);
+  color: white;
+  font-size: 30px;
+}
+
+.fieldagili {
+  display: grid;
+  grid-area: fieldagili;
+  margin: 5px;
+}
+
+.fieldforca {
+  display: grid;
+  grid-area: fieldforca;
+  margin: 5px;
+}
+
+.fieldintel {
+  display: grid;
+  grid-area: fieldintel;
+  margin: 5px;
+}
+
+.fieldprese {
+  display: grid;
+  grid-area: fieldprese;
+  margin: 5px;
+}
+
+.fieldvigor {
+  display: grid;
+  grid-area: fieldvigor;
+  margin: 5px;
+}
+
+
+.criarficha {
+  display: grid;
+  grid-area: criarficha;
+  background-color: var(--red);
+  color: var(--light);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  border: 2px;
+  width: 383px;
+  height: 40px;
+  margin: 5px 5px 100px 5px;
+  padding: 8px;
+}

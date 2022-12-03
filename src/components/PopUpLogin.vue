@@ -54,16 +54,9 @@
             </section>
 
             <section class="showcase-login-5">
-              <div class="top-box top-box-a-login">
-                <input
-                  v-model="usuario.password"
-                  style="color: white"
-                  type="password"
-                  placeholder="Senha"
-                  name="senha"
-                  class="input-register"
-                />
-              </div>
+                <div class="top-box top-box-a-login">
+                    <input type="password" placeholder="Senha" name="senha" class="input-register"/>
+                </div>
             </section>
 
             <section class="showcase-login-7">

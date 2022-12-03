@@ -1,0 +1,951 @@
+.pos-foto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 45px;
+}
+
+/* CONFIGURAÇÕES GERAIS */
+
+:root {
+  --primary: #24282e;
+  --secondary: #0c0e10;
+  --light: #ffffff;
+  --red: #b04141;
+  --dark: #101214;
+  --shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* FIM DAS CONFIGURAÇÕES GERAIS */
+
+/* CONFIGURAÇÃO DA PÁGINA DA FICHA */
+
+.ficha-orchid {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  background: linear-gradient(#0c0e10, #24282e);
+  display: grid;
+  grid-template-columns: 1fr, 2fr, 1fr;
+  grid-template-areas: "info-1 info-2 info-2 info-3";
+  height: 1040px;
+}
+
+/* FIM DA CONFIGURAÇÃO DA PÁGINA DA FICHA */
+
+/* INFORMAÇÕES INICIAIS DO PERSOGANEM (INPUTS) */
+
+.foto-pers {
+  width: 200px;
+  height: 225px;
+  background-color: #0c0e10;
+  border: solid #b04141;
+}
+
+.input-nome,
+.input-classe,
+.input-jogador,
+.input-origem {
+  width: 600px;
+}
+
+.input-nome {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 63px;
+  /* width: 400px; */
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.input-classe {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 63px;
+  /* width: 240px; */
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.input-jogador {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 63px;
+  /* width: 240px; */
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.input-origem {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 63px;
+  /* width: 240px; */
+  font-size: 20px;
+  color: #ffffff;
+}
+
+/* FIM DOS INPUTS */
+
+/* INFORMAÇÕES DE STATUS DO PERSONAGEM (INPUTS) */
+
+.nex-pers h1,
+.perodada-pers h1,
+.desl-pers h1,
+.quad-pers h1,
+.pvtotal-pers h1,
+.pvatual-pers h1,
+.santotal-pers h1,
+.sanatual-pers h1,
+.petotal-pers h1,
+.peatual-pers h1 {
+  padding-top: 60.5px;
+  font-size: 10px;
+}
+
+.nex-pers {
+  /* display: flex; */
+  justify-content: end;
+  align-items: center;
+  padding: 10px;
+  width: 86px;
+  margin-left: 50px;
+}
+
+.perodada-pers {
+  /* display: flex; */
+  justify-content: start;
+  align-items: center;
+  padding: 10px;
+  width: 86px;
+}
+
+.desl-pers {
+  /* display: flex; */
+  justify-content: end;
+  align-items: center;
+  padding-left: 10px;
+  width: 86px;
+  margin-left: 50px;
+}
+
+.quad-pers {
+  /* display: flex; */
+  justify-content: start;
+  align-items: center;
+  padding-left: 10px;
+  width: 86px;
+}
+
+.pvtotal-pers {
+  /* display: flex; */
+  justify-content: end;
+  align-items: center;
+  padding: 10px;
+  width: 86px;
+  margin-left: 50px;
+}
+
+.pvatual-pers {
+  /* display: flex; */
+  justify-content: start;
+  align-items: center;
+  padding: 10px;
+  width: 86px;
+}
+
+.santotal-pers {
+  /* display: flex; */
+  justify-content: end;
+  align-items: center;
+  padding-left: 10px;
+  width: 86px;
+  margin-left: 50px;
+}
+
+.sanatual-pers {
+  /* display: flex; */
+  justify-content: start;
+  align-items: center;
+  padding-left: 10px;
+  width: 86px;
+}
+
+.petotal-pers {
+  /* display: flex; */
+  justify-content: end;
+  align-items: center;
+  padding: 10px;
+  width: 86px;
+  margin-left: 50px;
+}
+
+.peatual-pers {
+  /* display: flex; */
+  justify-content: start;
+  align-items: center;
+  padding: 10px;
+  width: 86px;
+}
+
+.input-nex {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 63px;
+  width: 86px;
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.input-perodada {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 63px;
+  width: 86px;
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.input-deslocamento {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 63px;
+  width: 86px;
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+}
+.input-quadrados {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 63px;
+  width: 86px;
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+}
+.input-pvtotal {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 63px;
+  width: 86px;
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+}
+.input-pvatual {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 63px;
+  width: 86px;
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.input-santotal {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 63px;
+  width: 86px;
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.input-sanatual {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 63px;
+  width: 86px;
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.input-petotal {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 63px;
+  width: 86px;
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.input-peatual {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 63px;
+  width: 86px;
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* FIM DOS INPUTS */
+
+/* CAIXAS DOS PODERES, ITENS, ETC. */
+
+.sub-info-2 {
+  justify-content: center;
+}
+
+.itens-pers {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 200px;
+  width: 1100px;
+  margin: 50px 10px 10px 10px;
+}
+
+.input-itens {
+  width: 1098px;
+  height: 160px;
+  border: solid 2px #b04141;
+  background: none;
+  color: white;
+  font-size: 20px;
+}
+
+.proef-pers {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 100px;
+  width: 1100px;
+  margin: 50px 10px 10px 10px;
+}
+
+.input-proef {
+  width: 1098px;
+  height: 60px;
+  border: solid 2px #b04141;
+  background: none;
+  color: white;
+  font-size: 20px;
+}
+
+.habil-pers {
+  background-color: #101214;
+  border: solid var(--red) 2px;
+  height: 295px;
+  width: 1100px;
+  margin: 50px 10px 10px 10px;
+}
+
+.input-habil {
+  width: 1098px;
+  height: 255px;
+  border: solid 2px #b04141;
+  background: none;
+  color: white;
+  font-size: 20px;  
+}
+
+.tit-caixas {
+  background-color: #0c0e10;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  color: #b04141;
+  border: solid #b04141 2px;
+}
+/* FIM DAS CAIXAS */
+
+/* HEXÁGONOS */
+
+.hex1 {
+  padding: 10px;
+  height: 80px;
+}
+
+.hex2 {
+  padding: 10px;
+  height: 80px;
+}
+
+.hex3 {
+  padding: 10px;
+  height: 80px;
+  margin-top: -2px;
+}
+
+.hex4 {
+  padding: 10px;
+  height: 80px;
+  margin-top: -50px;
+}
+
+.hex5 {
+  padding: 10px;
+  height: 80px;
+  margin-top: -50px;
+}
+
+.hex1-pers {
+  height: 60px;
+  width: 60px;
+  background-color: #101214;
+  clip-path: polygon(50% 0, 100% 24%, 100% 76%, 50% 100%, 0 76%, 0 24%);
+  border: solid #b04141;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hex2-pers {
+  height: 60px;
+  width: 60px;
+  background-color: #101214;
+  clip-path: polygon(50% 0, 100% 24%, 100% 76%, 50% 100%, 0 76%, 0 24%);
+  border: solid #b04141;
+  border-radius: 25px;
+}
+
+.hex3-pers {
+  height: 60px;
+  width: 60px;
+  background-color: #101214;
+  clip-path: polygon(50% 0, 100% 24%, 100% 76%, 50% 100%, 0 76%, 0 24%);
+  border: solid #b04141;
+  border-radius: 25px;
+}
+
+.hex4-pers {
+  height: 60px;
+  width: 60px;
+  background-color: #101214;
+  clip-path: polygon(50% 0, 100% 24%, 100% 76%, 50% 100%, 0 76%, 0 24%);
+  border: solid #b04141;
+  border-radius: 25px;
+}
+
+.hex5-pers {
+  height: 60px;
+  width: 60px;
+  background-color: #101214;
+  clip-path: polygon(50% 0, 100% 24%, 100% 76%, 50% 100%, 0 76%, 0 24%);
+  border: solid #b04141;
+  border-radius: 25px;
+}
+
+.hex1-pers input {
+  border: none;
+  color: white;
+  background: none;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.hex2-pers input {
+  border: none;
+  color: white;
+  background: none;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  text-align: center;
+  margin: 5px 0px 0px 5px;
+}
+
+.hex3-pers input {
+  border: none;
+  color: white;
+  background: none;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  text-align: center;
+  margin: 5px 0px 0px 5px;
+}
+
+.hex4-pers input {
+  border: none;
+  color: white;
+  background: none;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  text-align: center;
+  margin: 5px 0px 0px 5px;
+}
+
+.hex5-pers input {
+  border: none;
+  color: white;
+  background: none;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  text-align: center;
+  margin: 5px 0px 0px 5px;
+}
+/* FIM DOS HEXÁGONOS */
+
+/* .logo-ordem img {
+  width: 300px;
+  margin-top: -40px;
+} */
+
+.info-1 {
+  grid-area: info-1;
+}
+
+.sub-info-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "foto-pers foto-pers"
+    "nex-pers perodada-pers"
+    "desl-pers quad-pers"
+    "pvtotal-pers pvatual-pers"
+    "santotal-pers sanatual-pers"
+    "petotal-pers peatual-pers";
+  width: 300px;
+}
+
+.info-2 {
+  grid-area: info-2;
+  width: 1250px;
+}
+
+.sub-info-2 {
+  display: grid;
+  grid-template-columns: repeat (4, 1fr);
+  grid-template-areas:
+    "nome-pers nome-pers classe-pers classe-pers"
+    "jogador-pers jogador-pers origem-pers origem-pers"
+    "itens-pers itens-pers itens-pers hex1-pers"
+    "itens-pers itens-pers itens-pers hex2-pers"
+    "proef-pers proef-pers proef-pers hex3-pers"
+    "habil-pers habil-pers habil-pers hex4-pers"
+    "habil-pers habil-pers habil-pers hex5-pers";
+  width: 1250px;
+  /* margin-left: 55px; */
+}
+
+.nome-pers,
+.classe-pers,
+.jogador-pers,
+.origem-pers {
+  padding-top: 20px;
+  width: 600px;
+  margin: 0px 10px 10px 10px;
+}
+
+.nome-pers,
+.jogador-pers {
+  /* justify-content: start; */
+}
+
+.classe-pers,
+.origem-pers {
+  /* justify-content: end; */
+}
+
+.info-3 {
+  grid-area: info-3;
+}
+
+.sub-info-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "logo-ordem"
+    "pericias-pers";
+  width: 300px;
+}
+
+/* REFERENCIANDO GRID AREAS */
+
+.foto-pers {
+  grid-area: foto-pers;
+}
+
+.nex-pers {
+  grid-area: nex-pers;
+}
+
+.perodada-pers {
+  grid-area: perodada-pers;
+}
+
+.desl-pers {
+  grid-area: desl-pers;
+}
+
+.quad-pers {
+  grid-area: quad-pers;
+}
+
+.pvtotal-pers {
+  grid-area: pvtotal-pers;
+}
+
+.pvatual-pers {
+  grid-area: pvatual-pers;
+}
+
+.santotal-pers {
+  grid-area: santotal-pers;
+}
+
+.sanatual-pers {
+  grid-area: sanatual-pers;
+}
+
+.petotal-pers {
+  grid-area: petotal-pers;
+}
+
+.peatual-pers {
+  grid-area: peatual-pers;
+}
+
+.nome-pers {
+  grid-area: nome-pers;
+}
+
+.classe-pers {
+  grid-area: classe-pers;
+}
+
+.jogador-pers {
+  grid-area: jogador-pers;
+}
+
+.origem-pers {
+  grid-area: origem-pers;
+}
+
+.itens-pers {
+  grid-area: itens-pers;
+}
+
+.habil-pers {
+  grid-area: habil-pers;
+}
+
+.proef-pers {
+  grid-area: proef-pers;
+}
+
+.logo-ordem {
+  grid-area: logo-ordem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.pericias-pers {
+  grid-area: pericias-pers;
+}
+
+/* TABELA DE PERÍCIAS */
+
+.tabela {
+  margin-top: 43px;
+  background-color: #101214;
+  border: 2px solid #b04141;
+}
+
+.tit-pericia {
+  background: #0c0e10;
+  color: #b04141;
+  border: 2px solid #b04141;
+  height: 40px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tit-agilidade {
+  background: #0c0e10;
+  color: #b04141;
+  border: 2px solid #b04141;
+  height: 30px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.tit-inteligencia {
+  background: #0c0e10;
+  color: #b04141;
+  border: 2px solid #b04141;
+  height: 30px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.tit-forca {
+  background: #0c0e10;
+  color: #b04141;
+  border: 2px solid #b04141;
+  height: 30px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.tit-presenca {
+  background: #0c0e10;
+  color: #b04141;
+  border: 2px solid #b04141;
+  height: 30px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.tit-vigor h1 {
+  background: #0c0e10;
+  color: #b04141;
+  border: 2px solid #b04141;
+  height: 30px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.lista-agilidade ul {
+  list-style: none;
+  padding: 10px 0px 0px 10px;
+}
+
+.lista-agilidade .ul-1 li {
+  height: 25px;
+}
+
+.lista-inteligencia ul {
+  list-style: none;
+  height: 250px;
+  padding: 10px 0px 0px 10px;
+}
+
+.lista-inteligencia .ul-1 li {
+  height: 25px;
+}
+
+.lista-forca ul {
+  list-style: none;
+  /* height: 50px; */
+  padding: 10px 0px 0px 10px;
+}
+
+.lista-forca .ul-1 li {
+  height: 25px;
+}
+
+.lista-presenca ul {
+  list-style: none;
+  height: 200px;
+  padding: 10px 0px 0px 10px;
+}
+
+.lista-presenca .ul-1 li {
+  height: 25px;
+}
+
+.lista-vigor ul {
+  list-style: none;
+  height: 25px;
+  padding: 10px 0px 0px 10px;
+}
+
+.lista-vigor .ul-1 li {
+  height: 25px;
+}
+/* FIM DA TABELA DE PERÍCIAS */
+
+.quadrados {
+  background-color: #0c0e10;
+  width: 40px;
+  height: 10px;
+  border: solid;
+}
+
+.lista-agilidade {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-areas:
+  'a1 q1'
+  'a2 q2'
+  'a3 q3'
+  'a4 q4'
+  'a5 q5'
+  'a6 q6'
+  'a7 q7';
+}
+
+.lista-forca {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-areas:
+  'a1 q1'
+  'a2 q2'
+}
+
+.lista-inteligencia {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-areas:
+  'a1 q1'
+  'a2 q2'
+  'a3 q3'
+  'a4 q4'
+  'a5 q5'
+  'a6 q6'
+  'a7 q7'
+  'a8 q8'
+  'a9 q9'
+  'a10 q10';
+}
+
+.lista-presenca {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-areas:
+  'a1 q1'
+  'a2 q2'
+  'a3 q3'
+  'a4 q4'
+  'a5 q5'
+  'a6 q6'
+  'a7 q7'
+  'a8 q8';
+}
+
+.lista-vigor {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-areas:
+  'a1 q1';
+}
+
+.q1, .q2, .q3, .q4, .q5, .q6, .q7, .q8, .q9, .q10 {
+  width: 50px;
+  height: 20px;
+  display: flex;
+  margin-left: 70px;
+}
+
+.a1 {
+  grid-area: a1;
+}
+
+.a2 {
+  grid-area: a2;
+}
+
+.a3 {
+  grid-area: a3;
+}
+
+.a4 {
+  grid-area: a4;
+}
+
+.a5 {
+  grid-area: a5;
+}
+
+.a6 {
+  grid-area: a6;
+}
+
+.a7 {
+  grid-area: a7;
+}
+
+.a8 {
+  grid-area: a8;
+}
+
+.a9 {
+  grid-area: a9;
+}
+
+.a10 {
+  grid-area: a10;
+}
+
+
+.q1 {
+  grid-area: q1;
+  background-color: #0c0e10;
+  border: solid 2px #b04141;
+}
+
+.q2 {
+  grid-area: q2;
+  background-color: #0c0e10;
+  border: solid 2px #b04141;
+}
+
+.q3 {
+  grid-area: q3;
+  background-color: #0c0e10;
+  border: solid 2px #b04141;
+}
+
+.q4 {
+  grid-area: q4;
+  background-color: #0c0e10;
+  border: solid 2px #b04141;
+}
+
+.q5 {
+  grid-area: q5;
+  background-color: #0c0e10;
+  border: solid 2px #b04141;
+}
+
+.q6 {
+  grid-area: q6;
+  background-color: #0c0e10;
+  border: solid 2px #b04141;
+}
+
+.q7 {
+  grid-area: q7;
+  background-color: #0c0e10;
+  border: solid 2px #b04141;
+}
+
+.q8 {
+  grid-area: q8;
+  background-color: #0c0e10;
+  border: solid 2px #b04141;
+}
+
+.q9 {
+  grid-area: q9;
+  background-color: #0c0e10;
+  border: solid 2px #b04141;
+}
+
+.q10 {
+  grid-area: q10;
+  background-color: #0c0e10;
+  border: solid 2px #b04141;
+}
+
+.input-q {
+  width: 45px;
+  background: none;
+  border: none;
+  color: #ffffff;
+}
