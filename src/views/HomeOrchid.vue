@@ -54,7 +54,6 @@
                 </div>
             </section>
         </div>
-      </section>
       <!-- FINAL IMAGEM DO ORDEM -->
       <hr class="linecut" color="#B04141" />
       <!-- TEXTOS E IMAGENS -->
@@ -99,7 +98,6 @@
         </div>
       </section>
     </div>
-  </div>
 </template>
 
 <script>

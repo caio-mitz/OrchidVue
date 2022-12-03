@@ -33,12 +33,6 @@
         </div>
         <PopUp :mostrarmodal="mostrarmodal" @fecharmodal='mostrarmodal=false' />
         <PopUpLogin :mostrarmodalLogin="mostrarmodalLogin" @fecharmodal='mostrarmodalLogin=false' />
-    </div>
-    <PopUp :mostrarmodal="mostrarmodal" @fecharmodal="mostrarmodal = false" />
-    <PopUpLogin
-      :mostrarmodalLogin="mostrarmodalLogin"
-      @fecharmodal="mostrarmodalLogin = false"
-    />
   </div>
 </template>
 
