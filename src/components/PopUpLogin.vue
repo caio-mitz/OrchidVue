@@ -76,6 +76,10 @@
               </div>
             </section>
 
+            <span class="error" v-show="hasError"
+              >Ocorreu algum erro, verifique os campos e tente novamente!</span
+            >
+
             <section class="showcase-login-extra">
               <div class="top-box-a-login">
                 <a href="#" class="forgot-pass">Esqueceu sua senha?</a>
@@ -126,16 +130,19 @@ export default {
   data() {
     return {
       usuario: {},
+      hasError: false,
     };
   },
   methods: {
     ...mapActions("auth", ["login", "getUsuario"]),
     async submitLogin() {
+      this.hasError = false;
+
       try {
         await this.login(this.usuario);
         this.$emit("fecharmodal");
       } catch (e) {
-        console.log("Deu merda!");
+        this.hasError = true;
       }
     },
   },
@@ -143,6 +150,12 @@ export default {
 </script>
 
 <style>
+.error {
+  width: 100%;
+  color: red;
+  text-align: center;
+}
+
 .modal-login {
   position: absolute;
   background-color: red;

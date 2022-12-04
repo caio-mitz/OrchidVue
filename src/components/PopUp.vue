@@ -122,6 +122,7 @@
                 </button>
               </div>
             </section>
+            <span class="hasError" v-show="hasError">{{ errorMessage }}</span>
             <button @click="$emit('fecharmodal')" class="fechar-botao">
               Fechar
             </button>
@@ -142,6 +143,9 @@ export default {
   data: () => {
     return {
       novoUsuario: {},
+      hasError: false,
+      errorMessage: "",
+      confirmarSenha: "",
     };
   },
 
@@ -176,13 +180,29 @@ export default {
     ...mapActions("auth", ["login"]),
 
     async submitRegister() {
+      this.hasError = false;
+
+      if (this.novoUsuario.password != this.confirmarSenha) {
+        this.hasError = true;
+        this.errorMessage = "As senhas não batem!";
+        return;
+      }
+
       const erro = await this.register();
 
       if (!erro) {
         const { username, password } = this.novoUsuario;
 
         await this.login({ username, password });
+
+        this.hasError = false;
+        this.errorMessage = "";
+
         this.$emit("fecharmodal");
+      } else {
+        this.hasError = true;
+        this.errorMessage =
+          "Ocorreu algum erro com o cadastro, verifique os campos e tente novamente!";
       }
     },
 
@@ -198,6 +218,13 @@ export default {
 </script>
 
 <style>
+.hasError {
+  width: 100%;
+  color: red;
+  text-align: center;
+  margin: 10px 0;
+}
+
 .fechar-botao {
   color: #b04141;
   text-decoration: none;
