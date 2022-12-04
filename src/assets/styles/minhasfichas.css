@@ -5,15 +5,18 @@
     --red: #b04141;
     --dark: #101214;
     --shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
-  }
-body{
+}
+
+body {
     background: linear-gradient(#0c0e10, #24282e);
 }
+
 .minhas-fichas {
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
     color: #ffffff;
 }
-.criar-button{
+
+.criar-button {
     background-color: transparent;
     color: var(--red);
     outline: 0;
@@ -30,10 +33,12 @@ body{
     margin-top: 20px;
     margin-left: 60px;
 }
-.criar-button:hover{
+
+.criar-button:hover {
     transform: scale(1.01);
 }
-.cards{
+
+.cards {
     display: flex;
     flex-wrap: wrap;
     height: 1040px;
@@ -56,6 +61,7 @@ body{
 .col4 {
     grid-area: col4;
 }
+
 .ficha1 {
     color: #ffffff;
     background: #0c0e10;
@@ -69,6 +75,9 @@ body{
 
 .foto1 {
     grid-area: foto1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .desc1 {
@@ -92,10 +101,10 @@ body{
     display: grid;
     grid-template-rows: 3fr;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "titulo titulo"
-    "det1 det2"
-    "det1 det2";
+    grid-template-areas:
+        "titulo titulo"
+        "det1 det2"
+        "det1 det2";
     padding: 30px 20px 20px 0px;
 }
 
@@ -132,4 +141,3 @@ body{
     height: 150px;
     width: 150px;
 }
-
