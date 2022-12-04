@@ -6,34 +6,40 @@ export const auth = {
     namespaced: true,
     state: () => ({
         loggedIn: false,
-        user: {}
+        credentials: {},
+        user: {},
     }),
     mutations: {
-        setLoginInfo(state, user) {
-            state.user = user
+        setLoginInfo(state, credentials) {
+            state.credentials = credentials
             state.loggedIn = true
         },
         setLogout(state) {
-            state.user = {}
+            state.credentials = {}
             state.loggedIn = false
+        },
+        setUserInfo(state, user) {
+            state.user = user;
         }
     },
     actions: {
-        async login({ commit, dispatch }, user) {
+        async login({ commit, dispatch }, credentials) {
             try {
-                const userInfo = await authService.login(user)
-                commit('setLoginInfo', userInfo)
-                api.defaults.headers.common['Authorization'] = userInfo.access;
+                const credentialsInfo = await authService.login(credentials)
+                commit('setLoginInfo', credentialsInfo)
+                api.defaults.headers.common['Authorization'] = "Bearer " + credentialsInfo.access;
                 dispatch("getUsuario");
-                return Promise.resolve(userInfo)
+                return Promise.resolve(credentialsInfo)
             } catch (e) {
                 commit('setLogout')
                 return Promise.reject(e)
             }
         },
-        async getUsuario() {
-            const { data } = await api.get("usuarios/");
-            console.log(data)
+        async getUsuario({ commit }) {
+            const { data } = await api.get("usuarios");
+            const [user] = data;
+
+            commit("setUserInfo", user)
         },
         logout({ commit }) {
             commit('setLogout')

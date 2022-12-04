@@ -54,9 +54,15 @@
             </section>
 
             <section class="showcase-login-5">
-                <div class="top-box top-box-a-login">
-                    <input type="password" placeholder="Senha" name="senha" class="input-register"/>
-                </div>
+              <div class="top-box top-box-a-login">
+                <input
+                  type="password"
+                  placeholder="Senha"
+                  name="senha"
+                  class="input-register"
+                  v-model="usuario.password"
+                />
+              </div>
             </section>
 
             <section class="showcase-login-7">
@@ -125,8 +131,12 @@ export default {
   methods: {
     ...mapActions("auth", ["login", "getUsuario"]),
     async submitLogin() {
-      await this.login(this.usuario);
-      this.$emit("fecharmodal");
+      try {
+        await this.login(this.usuario);
+        this.$emit("fecharmodal");
+      } catch (e) {
+        console.log("Deu merda!");
+      }
     },
   },
 };
