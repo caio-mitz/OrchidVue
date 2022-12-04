@@ -6,15 +6,39 @@
     --dark: #101214;
     --shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
   }
-
+body{
+    background: linear-gradient(#0c0e10, #24282e);
+}
 .minhas-fichas {
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
     color: #ffffff;
-    background: linear-gradient(#0c0e10, #24282e);
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "col1 col2 col3 col4";
+}
+.criar-button{
+    background-color: transparent;
+    color: var(--red);
+    outline: 0;
+    border-color: var(--red);
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+    transition: ease-in-out 100ms;
+    cursor: pointer;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+.criar-button:hover{
+    transform: scale(1.01);
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
     height: 1040px;
+    align-content: flex-start;
+    justify-content: center;
 }
 
 .col1 {
@@ -35,10 +59,10 @@
 .ficha1 {
     color: #ffffff;
     background: #0c0e10;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "foto1 desc1";
+    display: flex;
+    justify-content: space-around;
     height: 200px;
+    width: 400px;
     border: solid 2px var(--red);
 }
 
@@ -52,7 +76,8 @@
 }
 
 .conteudo1 {
-    padding: 40px;
+    padding: 30px;
+    height: 250px;
 }
 
 .cont-1 {
