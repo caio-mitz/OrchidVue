@@ -184,7 +184,8 @@
                     <legend><b>VIGOR</b></legend>
                 </fieldset> -->
         <div>
-            <input @change="convert64" type="file" id="submit-imagem">
+            <input @change="convert64" style="display: none;" type="file" id="submit-imagem">
+            <div @click="clickInput" class="submit-imagem"><ImageIcon/> ENVIAR IMAGEM</div>
             <button class="criarficha" @click="enviarFicha">Criar ficha</button>
         </div>
       </div>
@@ -194,8 +195,11 @@
 
 <script>
 import axios from "../plugins/axios";
-
+import ImageIcon from "vue-material-design-icons/Image.vue";
 export default {
+    components:{
+        ImageIcon
+    },
   data() {
     return {
       ficha: {
@@ -233,6 +237,9 @@ export default {
     },
   },
   methods: {
+    clickInput(){
+        document.getElementById('submit-imagem').click()
+    },
     limitarNex(valor, limitador, e) {
       if (valor > limitador) {
         e.srcElement.value = limitador;
@@ -313,6 +320,21 @@ input[type="checkbox"] {
 .label-disabled {
   color: #56606e;
   text-decoration: line-through;
+}
+.submit-imagem{
+    width: 180px;
+    height: 30px;
+    border: 1px solid #b04141;
+    color: #b04141;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    transition: 100ms ease-in-out;
+    cursor: pointer;
+}
+.submit-imagem:hover{
+    transform: scale(1.01)
 }
 /* .p-origem input[type=checkbox][disabled]{
     outline:1px solid #b04141;
