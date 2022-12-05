@@ -38,7 +38,7 @@ const routes = [
         component: ContatoOrchid,
       },
       {
-        path: '/ficha',
+        path: '/ficha/:id',
         component: FichaOrchid,
       },
       {

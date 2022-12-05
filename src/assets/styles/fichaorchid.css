@@ -216,6 +216,7 @@
   color: #ffffff;
   text-align: center;
 }
+
 .input-quadrados {
   background-color: #101214;
   border: solid var(--red) 2px;
@@ -225,6 +226,7 @@
   color: #ffffff;
   text-align: center;
 }
+
 .input-pvtotal {
   background-color: #101214;
   border: solid var(--red) 2px;
@@ -234,6 +236,7 @@
   color: #ffffff;
   text-align: center;
 }
+
 .input-pvatual {
   background-color: #101214;
   border: solid var(--red) 2px;
@@ -340,7 +343,7 @@
   border: solid 2px #b04141;
   background: none;
   color: white;
-  font-size: 20px;  
+  font-size: 20px;
 }
 
 .tit-caixas {
@@ -351,6 +354,7 @@
   color: #b04141;
   border: solid #b04141 2px;
 }
+
 /* FIM DAS CAIXAS */
 
 /* HEXÁGONOS */
@@ -484,6 +488,7 @@
   text-align: center;
   margin: 5px 0px 0px 5px;
 }
+
 /* FIM DOS HEXÁGONOS */
 
 /* .logo-ordem img {
@@ -564,6 +569,9 @@
 
 .foto-pers {
   grid-area: foto-pers;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .nex-pers {
@@ -768,6 +776,7 @@
 .lista-vigor .ul-1 li {
   height: 25px;
 }
+
 /* FIM DA TABELA DE PERÍCIAS */
 
 .quadrados {
@@ -779,63 +788,72 @@
 
 .lista-agilidade {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
-  'a1 q1'
-  'a2 q2'
-  'a3 q3'
-  'a4 q4'
-  'a5 q5'
-  'a6 q6'
-  'a7 q7';
+    'a1 q1'
+    'a2 q2'
+    'a3 q3'
+    'a4 q4'
+    'a5 q5'
+    'a6 q6'
+    'a7 q7';
 }
 
 .lista-forca {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
-  'a1 q1'
-  'a2 q2'
+    'a1 q1'
+    'a2 q2'
 }
 
 .lista-inteligencia {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
-  'a1 q1'
-  'a2 q2'
-  'a3 q3'
-  'a4 q4'
-  'a5 q5'
-  'a6 q6'
-  'a7 q7'
-  'a8 q8'
-  'a9 q9'
-  'a10 q10';
+    'a1 q1'
+    'a2 q2'
+    'a3 q3'
+    'a4 q4'
+    'a5 q5'
+    'a6 q6'
+    'a7 q7'
+    'a8 q8'
+    'a9 q9'
+    'a10 q10';
 }
 
 .lista-presenca {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
-  'a1 q1'
-  'a2 q2'
-  'a3 q3'
-  'a4 q4'
-  'a5 q5'
-  'a6 q6'
-  'a7 q7'
-  'a8 q8';
+    'a1 q1'
+    'a2 q2'
+    'a3 q3'
+    'a4 q4'
+    'a5 q5'
+    'a6 q6'
+    'a7 q7'
+    'a8 q8';
 }
 
 .lista-vigor {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
-  'a1 q1';
+    'a1 q1';
 }
 
-.q1, .q2, .q3, .q4, .q5, .q6, .q7, .q8, .q9, .q10 {
+.q1,
+.q2,
+.q3,
+.q4,
+.q5,
+.q6,
+.q7,
+.q8,
+.q9,
+.q10 {
   width: 50px;
   height: 20px;
   display: flex;

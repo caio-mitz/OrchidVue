@@ -6,7 +6,12 @@
         <div>CRIAR FICHA</div>
       </div>
       <div class="cards">
-        <div class="conteudo1" v-for="ficha of fichas" :key="ficha.id">
+        <div
+          class="conteudo1"
+          v-for="ficha of fichas"
+          :key="ficha.id"
+          @click="$router.push({ path: 'ficha/' + ficha.id })"
+        >
           <div class="ficha1">
             <div class="cont-1">
               <div
