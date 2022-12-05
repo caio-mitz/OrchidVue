@@ -183,8 +183,10 @@
         <!-- <fieldset class="fieldvigor">
                     <legend><b>VIGOR</b></legend>
                 </fieldset> -->
-
-        <button class="criarficha" @click="enviarFicha">Criar ficha</button>
+        <div>
+            <input @change="convert64" type="file" id="submit-imagem">
+            <button class="criarficha" @click="enviarFicha">Criar ficha</button>
+        </div>
       </div>
     </div>
   </div>
@@ -279,6 +281,15 @@ export default {
         console.error(e);
       }
     },
+    convert64(){
+        let file = document.getElementById('submit-imagem').files[0]
+        let reader = new FileReader()
+        const _this = this
+        reader.onload = function (){
+            _this.ficha.imagem = reader.result.split(',')[1]
+        } 
+        reader.readAsDataURL(file)
+    }
   },
   mounted() {
     this.getOrigens();
@@ -303,7 +314,6 @@ input[type="checkbox"] {
   color: #56606e;
   text-decoration: line-through;
 }
-
 /* .p-origem input[type=checkbox][disabled]{
     outline:1px solid #b04141;
 } */
