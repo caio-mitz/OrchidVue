@@ -83,20 +83,20 @@
 }
 
 .area2 {
-  display: grid;
-  grid-area: area2;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-areas:
-  'inputagili inputforca inputintel inputprese inputvigor'
-  'fieldagili fieldforca fieldintel fieldprese fieldvigor'
-  'criarficha criarficha criarficha criarficha criarficha';
+  display: flex;
+  flex-direction: column;
+  
   height: 300px;
+}
+.inputshows{
+  display: flex;
+  justify-content: space-around;
+}
+.inputshows input{
+  width: 180px;
 }
 
 .inputagili {
-  display: grid;
-  grid-area: inputagili;
   margin: 5px;
   border: solid 1px var(--red);
   background-color: var(--primary);
@@ -105,8 +105,6 @@
 }
 
 .inputforca {
-  display: grid;
-  grid-area: inputforca;
   margin: 5px;
   border: solid 1px var(--red);
   background-color: var(--primary);
@@ -115,8 +113,6 @@
 }
 
 .inputintel {
-  display: grid;
-  grid-area: inputintel;
   margin: 5px;
   border: solid 1px var(--red);
   background-color: var(--primary);
@@ -125,8 +121,6 @@
 }
 
 .inputprese {
-  display: grid;
-  grid-area: inputprese;
   margin: 5px;
   border: solid 1px var(--red);
   background-color: var(--primary);
@@ -135,8 +129,6 @@
 }
 
 .inputvigor {
-  display: grid;
-  grid-area: inputvigor;
   margin: 5px;
   border: solid 1px var(--red);
   background-color: var(--primary);
@@ -145,12 +137,17 @@
 }
 
 .fieldagili {
-  display: grid;
-  grid-area: fieldagili;
+  display: flex;
+  gap: 10px;
   margin: 5px;
+  min-width: 95%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
-.fieldforca {
+.fieldagili div{
+  width: 150px;
+}
+/* .fieldforca {
   display: grid;
   grid-area: fieldforca;
   margin: 5px;
@@ -172,7 +169,7 @@
   display: grid;
   grid-area: fieldvigor;
   margin: 5px;
-}
+} */
 
 
 .criarficha {
