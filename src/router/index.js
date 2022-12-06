@@ -38,8 +38,10 @@ const routes = [
         component: ContatoOrchid,
       },
       {
+        name: 'ficha',
         path: '/ficha/:id',
         component: FichaOrchid,
+        props: true,
       },
       {
         path: '/minhasfichas',

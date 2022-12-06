@@ -29,21 +29,46 @@
         <div class="top-box perodada-pers">
           <!-- INPUT PE DO PERSONAGEM -->
           <h1>PE/RODADA</h1>
-          <input type="number" class="input-perodada" min="0" />
+          <input
+            type="number"
+            class="input-perodada"
+            min="0"
+            :value="ficha.nex != 99 ? ficha.nex / 5 : 20"
+            disabled
+          />
         </div>
         <div class="top-box desl-pers">
           <!-- INPUT DESLOCAMENTO DO PERSONAGEM -->
           <h1>DESL.</h1>
-          <input type="number" class="input-deslocamento" min="0" />
+          <input
+            type="text"
+            class="input-deslocamento"
+            min="0"
+            disabled
+            :value="9 + 'm'"
+          />
         </div>
         <div class="top-box quad-pers">
           <h1>QUAD.</h1>
-          <input type="number" class="input-quadrados" min="0" />
+          <input
+            type="number"
+            class="input-quadrados"
+            min="0"
+            disabled
+            :value="6"
+          />
           <!-- INPUT QUADRADOS DO PERSONAGEM -->
         </div>
         <div class="top-box pvtotal-pers">
           <h1>PV TOTAL</h1>
-          <input type="number" class="input-pvtotal" min="0" />
+          <input
+            type="number"
+            class="input-pvtotal"
+            min="0"
+            :value="
+              (ficha.pvIni + ficha.vigor) + (ficha.pvMod + ficha.vigor) * (ficha.nex != 99 ? ficha.nex / 5 : 20)
+            "
+          />
           <!-- INPUT PV TOTAL DO PERSONAGEM -->
         </div>
         <div class="top-box pvatual-pers">
@@ -402,10 +427,9 @@ export default {
     async getFicha() {
       const id = this.$route.params.id;
 
-      const { data } = await axios.get("fichas");
-      const [ficha] = data;
+      const { data } = await axios.get(`fichas/${id}/`);
 
-      this.ficha = ficha;
+      this.ficha = data;
 
       console.log(this.ficha);
     },

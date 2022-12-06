@@ -10,7 +10,7 @@
           class="conteudo1"
           v-for="ficha of fichas"
           :key="ficha.id"
-          @click="$router.push({ path: 'ficha/' + ficha.id })"
+          @click="$router.push({ name: 'ficha', params: { id: ficha.id } })"
         >
           <div class="ficha1">
             <div class="cont-1">
