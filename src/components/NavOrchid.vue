@@ -43,6 +43,7 @@
                   Criar conta
                 </div>
               </li>
+              <li class="link" @click="logout" v-if="loggedIn" style="cursor:pointer">Sair</li>
             </section>
           </ul>
         </nav>
@@ -59,7 +60,7 @@
 <script>
 import PopUp from "@/components/PopUp.vue";
 import PopUpLogin from "@/components/PopUpLogin.vue";
-import { mapState } from "vuex";
+import { mapState, mapActions } from "vuex";
 
 export default {
   components: {
@@ -75,6 +76,9 @@ export default {
       mostrarmodalLogin: false,
     };
   },
+  methods:{
+    ...mapActions("auth", ['logout'])
+  }
 };
 </script>
 

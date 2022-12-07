@@ -17,6 +17,7 @@ export const auth = {
         setLogout(state) {
             state.credentials = {}
             state.loggedIn = false
+            state.user = {}
         },
         setUserInfo(state, user) {
             state.user = user;

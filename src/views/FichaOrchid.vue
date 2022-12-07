@@ -65,15 +65,17 @@
             type="number"
             class="input-pvtotal"
             min="0"
-            :value="
-              (ficha.pvIni + ficha.vigor) + (ficha.pvMod + ficha.vigor) * (ficha.nex != 99 ? ficha.nex / 5 : 20)
-            "
+            :value="(ficha.classe.pvIni + ficha.vigor) + (ficha.classe.pvMod + ficha.vigor) * (ficha.nex != 99 ? ficha.nex / 5 : 20)"
+            disabled
           />
           <!-- INPUT PV TOTAL DO PERSONAGEM -->
         </div>
         <div class="top-box pvatual-pers">
           <h1>PV ATUAL</h1>
-          <input type="number" class="input-pvatual" min="0" />
+          <input type="number" class="input-pvatual" min="0"
+          :value="(ficha.classe.pvIni + ficha.vigor) + (ficha.classe.pvMod + ficha.vigor) * (ficha.nex != 99 ? ficha.nex / 5 : 20)"
+          :max="(ficha.classe.pvIni + ficha.vigor) + (ficha.classe.pvMod + ficha.vigor) * (ficha.nex != 99 ? ficha.nex / 5 : 20)"
+           />
           <!-- INPUT PV ATUAL DO PERSONAGEM -->
         </div>
         <div class="top-box santotal-pers">
@@ -83,7 +85,7 @@
             class="input-santotal"
             min="0"
             disabled
-            :value="ficha.sani_max"
+            :value="(ficha.classe.snIni) + (ficha.classe.snMod) * (ficha.nex != 99 ? ficha.nex / 5 : 20)"
           />
           <!-- INPUT SAN TOTAL DO PERSONAGEM -->
         </div>
@@ -93,19 +95,25 @@
             type="number"
             class="input-sanatual"
             min="0"
-            disabled
-            :value="ficha.sani_atu"
+            :value="(ficha.classe.snIni) + (ficha.classe.snMod) * (ficha.nex != 99 ? ficha.nex / 5 : 20)"
+            :max="(ficha.classe.snIni) + (ficha.classe.snMod) * (ficha.nex != 99 ? ficha.nex / 5 : 20)"
           />
           <!-- INPUT SAN ATUAL DO PERSONAGEM -->
         </div>
         <div class="top-box petotal-pers">
           <h1>PE TOTAL</h1>
-          <input type="number" class="input-petotal" min="0" />
+          <input type="number" class="input-petotal" min="0" 
+          disabled
+          :value="(ficha.classe.peIni + ficha.prese) + (ficha.classe.peMod + ficha.prese) * (ficha.nex != 99 ? ficha.nex / 5 : 20)"
+          />
           <!-- INPUT PE TOTAL DO PERSONAGEM -->
         </div>
         <div class="top-box peatual-pers">
           <h1>PE ATUAL</h1>
-          <input type="number" class="input-peatual" min="0" />
+          <input type="number" class="input-peatual" min="0" 
+          :value="(ficha.classe.peIni + ficha.prese) + (ficha.classe.peMod + ficha.prese) * (ficha.nex != 99 ? ficha.nex / 5 : 20)"
+          :max="(ficha.classe.peIni + ficha.prese) + (ficha.classe.peMod + ficha.prese) * (ficha.nex != 99 ? ficha.nex / 5 : 20)"
+          />
           <!-- INPUT PE ATUAL DO PERSONAGEM -->
         </div>
         <!-- FIM DOS INPUTS DOS STATS EM NÚMEROS -->
