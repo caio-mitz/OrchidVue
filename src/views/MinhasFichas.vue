@@ -56,7 +56,6 @@ export default {
 
   async created() {
     const { data } = await axios.get("fichas");
-
     this.fichas = data;
   },
 };

@@ -424,11 +424,13 @@ export default {
   data() {
     return {
       ficha: {},
+      pericias: []
     };
   },
 
   async created() {
     await this.getFicha();
+    this.getPericiasFicha()
   },
 
   methods: {
@@ -440,6 +442,11 @@ export default {
       this.ficha = data;
 
       console.log(this.ficha);
+    },
+    async getPericiasFicha(){
+      const {data} = await axios.get(`ficha-pericias/?ficha=${this.ficha.id}`)
+      this.pericias = data
+      console.log(this.pericias)
     },
 
     textoProfi() {
